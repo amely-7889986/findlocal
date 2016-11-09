@@ -1,0 +1,90 @@
+#header{
+    z-index: 9999;
+    .page-width(100%);
+    .fixed(0, _, _, 0);
+    .header-box{
+        position: relative;
+        min-width: 320px;
+        max-width: 640px;
+        margin: 0 auto;
+        z-index: 10;
+        width: 100%;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        line-height: 40px;
+        display: -moz-box;
+        display: -webkit-box;
+        box-orient: horizontal;
+        -moz-box-orient: horizontal;
+        -webkit-box-orient: horizontal;
+    }
+    .flex1{
+        -webkit-box-flex: 1.0;
+        -moz-box-flex: 1.0;
+        -o-box-flex: 1.0;
+        -ms-box-flex: 1.0;
+        box-flex: 1.0;
+        margin: 0px 5px;
+    }
+    .flex2{
+        -webkit-box-flex: 3.0;
+        -moz-box-flex: 3.0;
+        -o-box-flex: 3.0;
+        -ms-box-flex: 3.0;
+        box-flex: 3.0;
+        margin: 0px 5px;
+    }
+    .header-logo{
+        display: inline-block;
+        height: 100%;
+        overflow: hidden;
+        left: 10px;
+        img{
+            display: inline-block;
+            width:80px;
+            padding-top: 8px;
+        }
+    }
+    .form-search{
+        display: inline-block;
+        height: 30px;
+        width: 100%;
+        border: #ddd solid 1px;
+        border-radius: 12px;
+        margin-top: 6px;
+        position: relative;
+        i{
+            position: absolute;
+            left: 8px;
+            top: -4px;
+            font-size: 20px;
+            color: #999999;
+        }
+        a{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 30px;
+            text-indent: 40px;
+            line-height: 30px;
+            color: #999;
+            text-decoration: inherit;
+        }
+    }
+    .form-title{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .header-right{
+        display: inline-block;
+        height: 100%;
+        text-align: right;
+        padding-right: 10px;
+        i{
+            font-size: 20px;
+            margin-left: 5px;
+            color: #333;
+        }
+    }
+}

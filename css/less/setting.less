@@ -1,0 +1,292 @@
+// default visual settings
+@support-ie-version: 7;
+@support-old-ie: ~`@{support-ie-version} < 8`; // [deprecated] use `@support-ie-version` instead
+@use-autoprefixer: true;
+@default-border-radius: 5px;
+@default-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+
+.clockhand(@values, @prefix: ~"", @suffix: ~"", @collapse: false) {
+    @l: length(@values);
+    @pre: ~`'@{prefix}' ? '@{prefix}-' : ''`;
+    @suf: ~`'@{suffix}' ? '-@{suffix}' : ''`;
+
+    .map(1) {
+        @top: extract(@values, 1);
+        @right: @top;
+        @bottom: @top;
+        @left: @top;
+    }
+    .map(2) {
+        @top: extract(@values, 1);
+        @right: extract(@values, 2);
+        @bottom: @top;
+        @left: @right;
+    }
+    .map(3) {
+        @top: extract(@values, 1);
+        @right: extract(@values, 2);
+        @bottom: extract(@values, 3);
+        @left: @right;
+    }
+    .map(4) {
+        @top: extract(@values, 1);
+        @right: extract(@values, 2);
+        @bottom: extract(@values, 3);
+        @left: extract(@values, 4);
+    }
+    .map(@l);
+
+    .reduce() when (@collapse) and not (@top = _) and not (@right = _)
+        and not (@bottom = _) and not (@left = _) {
+        .output() {
+            @shorthand: @top;
+        }
+        .output() when not (@right = @top) {
+            @shorthand: @top @right;
+        }
+        .output() when not (@bottom = @top) {
+            @shorthand: @top @right @bottom;
+        }
+        .output() when not (@left = @right) {
+            @shorthand: @top @right @bottom @left;
+        }
+        .output();
+        @{prefix}@{suf}: @shorthand;
+    }
+    .reduce() when (default()) {
+        .output() when not (@top = _) {
+            @{pre}top@{suf}: @top;
+        }
+        .output() when not (@right = _) {
+            @{pre}right@{suf}: @right;
+        }
+        .output() when not (@bottom = _) {
+            @{pre}bottom@{suf}: @bottom;
+        }
+        .output() when not (@left = _) {
+            @{pre}left@{suf}: @left;
+        }
+        .output();
+    }
+
+    .reduce();
+}
+.absolute(...) {
+    position: absolute;
+    .clockhand(@arguments);
+}
+
+.fixed(...) {
+    position: fixed;
+    .clockhand(@arguments);
+}
+
+.relative(...) {
+    position: relative;
+    .clockhand(@arguments);
+}
+.page-width(@page-width) {
+    width: @page-width;
+    margin-right: auto;
+    margin-left: auto;
+}
+.padding(...) {
+    .clockhand(@arguments, padding, ~"", true);
+}
+
+.margin(...) {
+    .clockhand(@arguments, margin, ~"", true);
+}
+
+.border-color(...) {
+    .clockhand(@arguments, border, color, true);
+}
+
+.border-style(...) {
+    .clockhand(@arguments, border, style, true);
+}
+
+.border-width(...) {
+    .clockhand(@arguments, border, width, true);
+}
+//
+// .ellipsis
+//
+// Known issue:
+// 指定参数（行数）的功能只支持WebKit。
+
+.ellipsis(...) {
+    overflow: hidden;
+}
+.ellipsis() {
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ellipsis(@line-number) {
+    display: -webkit-box;
+    -webkit-line-clamp: @line-number;
+    -webkit-box-orient: vertical;
+}
+
+// clearfix via http://h5bp.com/q
+.clearfix() {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+    &:after {
+        clear: both;
+    }
+}
+.clearfix() when (@support-ie-version < 8) {
+    *zoom: 1;
+}
+// Opacity
+// In IE9, when `opacity` is set, alpha filter will be ignored
+.opacity(@opacity: 100%) {
+    opacity: unit(@opacity) / 100;
+}
+.opacity(@opacity: 100%) when (@support-ie-version < 9) {
+    @op: unit(@opacity);
+    filter: ~"alpha(opacity=@{op})";
+}
+
+// Single background with RGBA color
+.rgba-background(@rgba) when (@support-ie-version < 9) {
+    // prevent click through in IE 8 using a transparent background image
+    background: ~"url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) repeat\0";
+    @argb: argb(@rgba);
+    filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{argb},endColorstr=@{argb})\0";
+    zoom: ~"1\0";
+    background: @rgba;
+    // hack for IE9 to prevent applying rgba and filter at the same time
+    :root & {
+        filter: none\9;
+    }
+}
+.rgba-background(@rgba) when not (@support-ie-version < 9) {
+    background: @rgba;
+}
+.rgba-background(@color, @opacity) {
+    @op: unit(@opacity);
+    @rgba: fadeout(@color, percentage((100 - @op) / 100));
+    .rgba-background(@rgba);
+}
+
+// Border Radius
+
+// all
+.border-radius(@radius: @default-border-radius) when not (@use-autoprefixer) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+}
+.border-radius(@radius: @default-border-radius) when (@use-autoprefixer) {
+    border-radius: @radius;
+}
+.border-radius(@radius-x, @radius-y) {
+    .border-radius(@radius-x ~"/" @radius-y);
+}
+
+// top left
+.border-top-left-radius(@radius) when not (@use-autoprefixer) {
+    -webkit-border-top-left-radius: @radius;
+        -moz-border-radius-topleft: @radius;
+            border-top-left-radius: @radius;
+}
+.border-top-left-radius(@radius) when (@use-autoprefixer) {
+    border-top-left-radius: @radius;
+}
+.border-top-left-radius(@radius-x, @radius-y) {
+    .border-top-left-radius(@radius-x ~"/" @radius-y);
+}
+
+// top right
+.border-top-right-radius(@radius) when not (@use-autoprefixer) {
+    -webkit-border-top-right-radius: @radius;
+        -moz-border-radius-topright: @radius;
+            border-top-right-radius: @radius;
+}
+.border-top-right-radius(@radius) when (@use-autoprefixer) {
+    border-top-right-radius: @radius;
+}
+.border-top-right-radius(@radius-x, @radius-y) {
+    .border-top-right-radius(@radius-x ~"/" @radius-y)
+}
+
+// bottom right
+.border-bottom-right-radius(@radius) when not (@use-autoprefixer) {
+    -webkit-border-bottom-right-radius: @radius;
+        -moz-border-radius-bottomright: @radius;
+            border-bottom-right-radius: @radius;
+}
+.border-bottom-right-radius(@radius) when (@use-autoprefixer) {
+    border-bottom-right-radius: @radius;
+}
+.border-bottom-right-radius(@radius-x, @radius-y) {
+    .border-bottom-right-radius(@radius-x ~"/" @radius-y)
+}
+
+// bottom left
+.border-bottom-left-radius(@radius) when not (@use-autoprefixer) {
+    -webkit-border-bottom-left-radius: @radius;
+        -moz-border-radius-bottomleft: @radius;
+            border-bottom-left-radius: @radius;
+}
+.border-bottom-left-radius(@radius) when (@use-autoprefixer) {
+    border-bottom-left-radius: @radius;
+}
+.border-bottom-left-radius(@radius-x, @radius-y) {
+    .border-bottom-left-radius(@radius-x ~"/" @radius-y);
+}
+
+// top
+.border-top-radius(@radius) {
+    .border-top-left-radius(@radius);
+    .border-top-right-radius(@radius);
+}
+.border-top-radius(@radius-x, @radius-y) {
+    .border-top-radius(@radius-x ~"/" @radius-y);
+}
+
+// right
+.border-right-radius(@radius) {
+    .border-top-right-radius(@radius);
+    .border-bottom-right-radius(@radius);
+}
+.border-right-radius(@radius-x, @radius-y) {
+    .border-right-radius(@radius-x ~"/" @radius-y);
+}
+
+// bottom
+.border-bottom-radius(@radius) {
+    .border-bottom-right-radius(@radius);
+    .border-bottom-left-radius(@radius);
+}
+.border-bottom-radius(@radius-x, @radius-y) {
+    .border-bottom-radius(@radius-x ~"/" @radius-y);
+}
+
+// left
+.border-left-radius(@radius) {
+    .border-top-left-radius(@radius);
+    .border-bottom-left-radius(@radius);
+}
+.border-left-radius(@radius-x, @radius-y) {
+    .border-left-radius(@radius-x ~"/" @radius-y);
+}
+
+//
+// Drop shadows
+.box-shadow(@shadow: @default-box-shadow, ...) when not (@use-autoprefixer) {
+    @shadows: ~`(function() { var args = "@{arguments}".replace(/[[\]]/g, ""); if(!args.match(/[^,]\s+[^,]/)) { args = args.replace(/,(?=[^()]*\))/g, "%est%").replace(/,/g, "").replace(/%est%/g, ","); } return args;})()`;
+    -webkit-box-shadow: @shadows;
+       -moz-box-shadow: @shadows;
+            box-shadow: @shadows;
+}
+.box-shadow(@shadow: @default-box-shadow, ...) when (@use-autoprefixer) {
+    @shadows: ~`(function() { var args = "@{arguments}".replace(/[[\]]/g, ""); if(!args.match(/[^,]\s+[^,]/)) { args = args.replace(/,(?=[^()]*\))/g, "%est%").replace(/,/g, "").replace(/%est%/g, ","); } return args;})()`;
+    box-shadow: @shadows;
+}
