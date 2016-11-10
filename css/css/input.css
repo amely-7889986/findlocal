@@ -1,0 +1,30 @@
+.form-item {
+  position: relative;
+  font-size: 16px;
+  height: 44px;
+  line-height: 44px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.form-item .label {
+  width: 80px;
+  position: absolute;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-item .input,
+.form-item .textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  border: 0;
+  background: 0 0;
+  padding-left: 80px;
+}
+.form-item .icon-close {
+  position: absolute;
+  top: 0;
+  right: 6px;
+}
