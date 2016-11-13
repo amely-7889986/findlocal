@@ -28,8 +28,7 @@
             </div>
             <div class="flex2">
                 <div class="form-search">
-                <a href="locate/locate.html">定位置:<span>广州市珠江新城</span></a>
-                <i class="icon iconfont">&#xe619;</i>
+                <a href="locate/locate.html">定位置:<span>广州市珠江新城</span><i class="icon iconfont">&#xe621;</i></a>
                 </div>
             </div>
             <div class="flex1 header-btn">
@@ -38,8 +37,95 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="page-width">
+            <div class="swiper-container swiper-container1 home-banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="page/pageinfo.html"><img src="update/banner.png" alt=""></a></div>
+                    <div class="swiper-slide"><a href="page/pageinfo.html"><img src="update/banner.png" alt=""></a></div>
+                    <div class="swiper-slide"><a href="page/pageinfo.html"><img src="update/banner.png" alt=""></a></div>
+                    <div class="swiper-slide"><a href="page/pageinfo.html"><img src="update/banner.png" alt=""></a></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination1"></div>
+            </div>
+        </div>
+        <div class="page-width bg-bai box-shadow">
+            <div class="index-menu">
+                <ul>
+                    <li><a href="#"><img src="images/coupon.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/vrshop.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/duihuan.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/faxian.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/pindan.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-width bg-bai box-shadow">
+            <div class="loc-box">
+                <ul class="loc-tab">
+                    <li class="active"><i class="icon iconfont">&#xe62b;</i>城市地标</li>
+                    <li><i class="icon iconfont">&#xe8b2;</i>地标产品</li>
+                    <li><i class="icon iconfont">&#xe66e;</i>特色产品</li>
+                    <li><i class="icon iconfont">&#xe601;</i>非遗产品</li>
+                </ul>
+                <div class="loctab-con">
+                    <div class="con1">
+                        
+                    </div>
+                    <div class="con2"></div>
+                    <div class="con3"></div>
+                    <div class="con4"></div>
+                </div>
+            </div>
+        </div>
+        <div class="page-width mgb76">
+            <div class="newslist">
+                <h3><i class="icon iconfont"></i>资讯推荐</h3>
+            </div>
+            <div class="newsbox">
+                <div class="picbox">
+                    <img src="update/page-l01.png" alt="">
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div id="bottom-nav">
+        <div class="page-width pad1">
+            <ul class="l-float">
+                <li class="active">
+                    <a class="a-box" href="index.html"></a>
+                    <i class="icon iconfont">&#xe613;</i>
+                    <p>首页</p>
+                </li>
+                <li>
+                    <i class="icon iconfont">&#xe68d;</i>
+                    <p>商城</p>
+                </li>
+                <li>
+                    <a class="a-box" href=""></a>
+                    <i class="icon iconfont">&#xe602;</i>
+                    <p>VR地标</p>
+                </li>
+                <li>
+                    <a class="a-box" href=""></a>
+                    <i class="icon iconfont">&#xe685;</i>
+                    <p>我的</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
     
 </body>
 <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="js/swiper-3.3.1.jquery.min.js" type="text/javascript"></script>
+<script>
+var swiper = new Swiper('.swiper-container1', {
+    pagination: '.swiper-pagination1',
+    paginationClickable: true,
+    spaceBetween: 10,
+    autoplay: 5000,//可选选项，自动滑动
+});
+</script>
 </html>
