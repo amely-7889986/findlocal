@@ -257,7 +257,8 @@ a {
   z-index: 9999;
 }
 #bottom-nav .page-width {
-  background: #1f1f1f;
+  background: #000;
+  opacity: .9;
 }
 #bottom-nav li {
   position: relative;
@@ -618,6 +619,7 @@ a {
 .loc-tab {
   display: block;
   overflow: hidden;
+  border-bottom: 1px solid #ddd;
 }
 .loc-tab li {
   display: block;
@@ -629,4 +631,40 @@ a {
 }
 .loc-tab li.active {
   color: #f5c658;
+}
+.loctab-con {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.loctab-con .info {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.loctab-con .picbox {
+  display: block;
+  overflow: hidden;
+  float: left;
+}
+.loctab-con .picbox .pic img {
+  width: 100%;
+}
+.newslist {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.newsbox {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.newsbox .picbox {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.newsbox .picbox img {
+  width: 100%;
 }
