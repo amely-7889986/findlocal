@@ -137,8 +137,8 @@ a {
 .bg-bai {
   background: #fff;
 }
-.bg-cheng {
-  background: #f35929;
+.bg-huang {
+  background: #f5c658;
 }
 .bg-hui {
   background: #666666;
@@ -302,7 +302,6 @@ a {
 }
 #bottom-nav .shopbtn a.addcar {
   width: 30%;
-  background: #f35929;
   line-height: 3em;
   color: #ffffff;
   font-size: 1.4em !important;
@@ -316,7 +315,6 @@ a {
 }
 #bottom-nav .shopbtn a.onebook {
   width: 60%;
-  background: #f35929;
   line-height: 3em;
   color: #ffffff;
   font-size: 1.4em !important;
@@ -394,7 +392,7 @@ a {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -708,7 +706,7 @@ a {
 }
 .newslist h3 {
   text-align: center;
-  border-bottom: 1px solid #1f1f1f;
+  border-bottom: 1px solid #ddd;
   padding: .4em 20%;
   height: 2em;
   line-height: 2em;
@@ -728,15 +726,93 @@ a {
   margin-top: -1em;
 }
 .newsbox-lg {
+  position: relative;
   display: block;
   overflow: hidden;
   width: 100%;
+  background: #fff;
 }
 .newsbox-lg .picbox {
   display: block;
   overflow: hidden;
-  width: 100%;
+  width: 96%;
+  padding: .4em 2%;
+  height: 12em;
 }
 .newsbox-lg .picbox img {
   width: 100%;
+}
+.newsbox-lg .tag {
+  display: inline-block;
+  position: absolute;
+  top: 1em;
+  padding: 2px 4px;
+  background: #f5c658;
+  color: #1f1f1f;
+}
+.newsbox-lg .title {
+  display: block;
+  position: absolute;
+  top: 6em;
+  height: 6em;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+  background: linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+  color: #fff;
+}
+.newsbox-lg .title .manhead {
+  position: relative;
+  top: 3.4em;
+  float: left;
+  display: block;
+  width: 4em;
+  margin: 0 .4em;
+}
+.newsbox-lg .title .manhead .pic {
+  display: block;
+  overflow: hidden;
+  width: 4em;
+  height: 4em;
+  border: 2px solid #f5c658;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.newsbox-lg .title .manhead .pic img {
+  width: 100%;
+}
+.newsbox-lg .title .manhead p.name {
+  color: #aaa;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 0.8em !important;
+}
+.newsbox-lg .title > p {
+  margin-top: 3em;
+  font-size: 1.2em;
+}
+.newsbox-lg p.info {
+  display: block;
+  padding: .4em 0 .4em 4.8em;
+  border-bottom: 1px solid #ddd;
+}
+.newsbox-lg .checkbox {
+  display: block;
+  overflow: hidden;
+  padding: .4em;
+  font-size: 1.2em;
+}
+.newsbox-lg .checkbox a {
+  margin: .4em;
+}
+.newsbox-lg .checkbox a i {
+  font-size: 1.2em;
+  margin-right: 4px;
+}
+.newsbox-lg .checkbox a:hover,
+.newsbox-lg .checkbox a:active,
+.newsbox-lg .checkbox a.active {
+  color: #f5c658;
 }

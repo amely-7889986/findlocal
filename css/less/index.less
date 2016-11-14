@@ -107,7 +107,7 @@
 	margin-top: 1em;
 	h3{
 		.text-ac;
-		border-bottom: 1px solid #1f1f1f;
+		border-bottom: 1px solid #ddd;
 		padding: .4em 20%;
 		height: 2em;
 		line-height: 2em;
@@ -128,15 +128,91 @@
 	}
 }
 .newsbox-lg{
+	position: relative;
 	display: block;
 	overflow: hidden;
 	width: 100%;
+	.bg-bai;
 	.picbox{
 		display: block;
 		overflow: hidden;
-		width: 100%;
+		width: 96%;
+		padding: .4em 2%;
+		height: 12em;
 		img{
 			width: 100%;
+		}
+	}
+	.tag{
+		display: inline-block;
+		position: absolute;
+		top: 1em;
+		padding: 2px 4px;
+		.bg-huang;
+		.col-hei;
+	}
+	.title{
+		display: block;
+		position: absolute;
+		top: 6em;
+		height: 6em;
+		background: -webkit-linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)); 
+		background: -o-linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)); 
+		background: -moz-linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 1));
+		background: linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 1));
+		color: #fff;
+		.manhead{
+			position: relative;
+			top: 3.4em;
+			.l-left;
+			display: block;
+			width: 4em;
+			margin: 0 .4em;
+			.pic{
+				display: block;
+				overflow: hidden;
+				width: 4em;
+				height: 4em;
+				border: 2px solid #f5c658;
+				border-radius: 50%;
+				box-sizing: border-box;
+				img{
+					width: 100%;
+				}
+			}
+			p.name{
+				color: #aaa;
+				display: block;
+				overflow: hidden;
+				white-space: nowrap;
+				.text-ac;
+				.font8;
+			}
+		}
+		>p{
+			margin-top: 3em;
+			.font12;
+		}
+	}
+	p.info{
+		display: block;
+		padding: .4em 0 .4em 4.8em;
+		border-bottom: 1px solid #ddd;
+	}
+	.checkbox{
+		display: block;
+		overflow: hidden;
+		padding: .4em;
+		.font12;
+		a{
+			margin: .4em;
+			i{
+				.font12;
+				margin-right: 4px;
+			}
+		}
+		a:hover,a:active,a.active{
+			.col-huang;
 		}
 	}
 }
