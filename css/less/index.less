@@ -41,14 +41,60 @@
 		display: block;
 		overflow: hidden;
 		width: 100%;
+		float: left;
+		margin: 8px 0;
 	}
 	.picbox{
 		display: block;
 		overflow: hidden;
 		.l-left;
 		.pic{
+			display: block;
+			overflow: hidden;
+			height: 12em;
 			img{
 				width: 100%;
+			}
+		}
+	}
+	.title{
+		display: block;
+		overflow: hidden;
+		height: 4em;
+		line-height: 4em;
+		width: 92%;
+		padding: 0 4%;
+		position: absolute;
+		top: 8em;
+		color: #fff;
+		background: -webkit-linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)); 
+		background: -o-linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)); 
+		background: -moz-linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 1));
+		background: linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 1));
+		h2{
+			font-weight: normal;
+			.font18;
+		}
+		>a{
+			.col-huang;
+		}
+	}
+	.inner{
+		padding: 4px;
+		>p{
+			display: block;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		.checkbox{
+			display: block;
+			overflow: hidden;
+			a.check{
+				margin: 4px;
+			}
+			a:hover.check,a:active.check,a.active{
+				.col-huang;
 			}
 		}
 	}
@@ -58,8 +104,30 @@
 	display: block;
 	overflow: hidden;
 	width: 100%;
+	margin-top: 1em;
+	h3{
+		.text-ac;
+		border-bottom: 1px solid #1f1f1f;
+		padding: .4em 20%;
+		height: 2em;
+		line-height: 2em;
+		.bg-bai;
+		font-weight: normal;
+		.font14;
+		span{
+			padding: 0 .4em;
+			.bg-bai;
+			display: inline-block;
+			i{
+				margin: 0 .2em;
+			}
+		}
+		hr{
+			margin-top: -1em;
+		}
+	}
 }
-.newsbox{
+.newsbox-lg{
 	display: block;
 	overflow: hidden;
 	width: 100%;

@@ -189,10 +189,10 @@ a {
   font-size: 1em;
 }
 .font12 {
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 .font14 {
-  font-size: 1.4em;
+  font-size: 1.4em !important;
 }
 .font18 {
   font-size: 1.8em;
@@ -305,21 +305,21 @@ a {
   background: #f35929;
   line-height: 3em;
   color: #ffffff;
-  font-size: 1.4em;
+  font-size: 1.4em !important;
 }
 #bottom-nav .shopbtn a.buynow {
   width: 30%;
   background: #e00c0c;
   line-height: 3em;
   color: #ffffff;
-  font-size: 1.4em;
+  font-size: 1.4em !important;
 }
 #bottom-nav .shopbtn a.onebook {
   width: 60%;
   background: #f35929;
   line-height: 3em;
   color: #ffffff;
-  font-size: 1.4em;
+  font-size: 1.4em !important;
 }
 .bottom-tab {
   display: block;
@@ -641,30 +641,102 @@ a {
   display: block;
   overflow: hidden;
   width: 100%;
+  float: left;
+  margin: 8px 0;
 }
 .loctab-con .picbox {
   display: block;
   overflow: hidden;
   float: left;
 }
+.loctab-con .picbox .pic {
+  display: block;
+  overflow: hidden;
+  height: 12em;
+}
 .loctab-con .picbox .pic img {
   width: 100%;
+}
+.loctab-con .title {
+  display: block;
+  overflow: hidden;
+  height: 4em;
+  line-height: 4em;
+  width: 92%;
+  padding: 0 4%;
+  position: absolute;
+  top: 8em;
+  color: #fff;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+  background: linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+}
+.loctab-con .title h2 {
+  font-weight: normal;
+  font-size: 1.8em;
+}
+.loctab-con .title > a {
+  color: #f5c658;
+}
+.loctab-con .inner {
+  padding: 4px;
+}
+.loctab-con .inner > p {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.loctab-con .inner .checkbox {
+  display: block;
+  overflow: hidden;
+}
+.loctab-con .inner .checkbox a.check {
+  margin: 4px;
+}
+.loctab-con .inner .checkbox a:hover.check,
+.loctab-con .inner .checkbox a:active.check,
+.loctab-con .inner .checkbox a.active {
+  color: #f5c658;
 }
 .newslist {
   display: block;
   overflow: hidden;
   width: 100%;
+  margin-top: 1em;
 }
-.newsbox {
+.newslist h3 {
+  text-align: center;
+  border-bottom: 1px solid #1f1f1f;
+  padding: .4em 20%;
+  height: 2em;
+  line-height: 2em;
+  background: #fff;
+  font-weight: normal;
+  font-size: 1.4em !important;
+}
+.newslist h3 span {
+  padding: 0 .4em;
+  background: #fff;
+  display: inline-block;
+}
+.newslist h3 span i {
+  margin: 0 .2em;
+}
+.newslist h3 hr {
+  margin-top: -1em;
+}
+.newsbox-lg {
   display: block;
   overflow: hidden;
   width: 100%;
 }
-.newsbox .picbox {
+.newsbox-lg .picbox {
   display: block;
   overflow: hidden;
   width: 100%;
 }
-.newsbox .picbox img {
+.newsbox-lg .picbox img {
   width: 100%;
 }
