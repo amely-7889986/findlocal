@@ -1,4 +1,7 @@
 // 首页切换
+$(document).ready(function(){
+	$("#tab2,#tab3,#tab4").hide();
+});
 var lists = $('.loc-tab li');
 var contents = $('.loctab-con .info');
 function bindEvent(){

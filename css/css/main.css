@@ -630,16 +630,20 @@ a {
 .loc-tab li.active {
   color: #f5c658;
 }
+.swiper-container2 {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
 .loctab-con {
   display: block;
   overflow: hidden;
   width: 100%;
 }
 .loctab-con .info {
-  display: block;
   overflow: hidden;
   width: 100%;
-  float: left;
+  height: 16em;
   margin: 8px 0;
 }
 .loctab-con .picbox {
@@ -689,6 +693,7 @@ a {
 .loctab-con .inner .checkbox {
   display: block;
   overflow: hidden;
+  border-top: 1px solid #ddd;
 }
 .loctab-con .inner .checkbox a.check {
   margin: 4px;
@@ -735,8 +740,8 @@ a {
 .newsbox-lg .picbox {
   display: block;
   overflow: hidden;
-  width: 96%;
-  padding: .4em 2%;
+  width: 100%;
+  padding: .4em 0;
   height: 12em;
 }
 .newsbox-lg .picbox img {
@@ -753,7 +758,8 @@ a {
 .newsbox-lg .title {
   display: block;
   position: absolute;
-  top: 6em;
+  width: 100%;
+  top: 6.8em;
   height: 6em;
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
   background: -o-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
