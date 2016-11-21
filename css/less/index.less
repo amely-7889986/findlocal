@@ -137,6 +137,7 @@
 	display: block;
 	overflow: hidden;
 	width: 100%;
+	margin-bottom: 1em;
 	.bg-bai;
 	.picbox{
 		display: block;
@@ -198,27 +199,74 @@
 		>p{
 			margin-top: 3em;
 			.font12;
+			display: block;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
 		}
 	}
 	p.info{
 		display: block;
 		padding: .4em 0 .4em 4.8em;
-		border-bottom: 1px solid #ddd;
 	}
-	.checkbox{
+}
+.clickbox{
+	display: block;
+	overflow: hidden;
+	padding: .4em;
+	border-top: 1px solid #ddd;
+	.font12;
+	a{
+		margin: .4em;
+		i{
+			.font12;
+			margin-right: 4px;
+		}
+	}
+	a:hover,a:active,a.active{
+		.col-huang;
+	}
+}
+.newsbox-sm{
+	display: block;
+	overflow: hidden;
+	.bg-bai;
+	width: 100%;
+	margin-bottom: 1em;
+	.picbox{
 		display: block;
 		overflow: hidden;
-		padding: .4em;
-		.font12;
-		a{
-			margin: .4em;
-			i{
-				.font12;
-				margin-right: 4px;
+		padding: 8px;
+		li{
+			display: block;
+			overflow: hidden;
+			width: 31.33%;
+			margin: 0 1%;
+			.l-left;
+			img{
+				width: 100%;
 			}
 		}
-		a:hover,a:active,a.active{
-			.col-huang;
+	}
+	.infobox{
+		display: block;
+		overflow: hidden;
+		.title{
+			display: block;
+			overflow: hidden;
+			height: 24px;
+			line-height: 24px;
+			.tag{
+				padding: 2px 4px;
+				.bg-huang;
+				.col-hei;
+				margin-right: 4px;
+			}
+			>p{
+				display: block;
+				overflow: hidden;
+				.font12;
+			}
 		}
 	}
 }

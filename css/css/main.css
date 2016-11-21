@@ -735,6 +735,7 @@ a {
   display: block;
   overflow: hidden;
   width: 100%;
+  margin-bottom: 1em;
   background: #fff;
 }
 .newsbox-lg .picbox {
@@ -798,27 +799,74 @@ a {
 .newsbox-lg .title > p {
   margin-top: 3em;
   font-size: 1.2em;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .newsbox-lg p.info {
   display: block;
   padding: .4em 0 .4em 4.8em;
-  border-bottom: 1px solid #ddd;
 }
-.newsbox-lg .checkbox {
+.clickbox {
   display: block;
   overflow: hidden;
   padding: .4em;
+  border-top: 1px solid #ddd;
   font-size: 1.2em;
 }
-.newsbox-lg .checkbox a {
+.clickbox a {
   margin: .4em;
 }
-.newsbox-lg .checkbox a i {
+.clickbox a i {
   font-size: 1.2em;
   margin-right: 4px;
 }
-.newsbox-lg .checkbox a:hover,
-.newsbox-lg .checkbox a:active,
-.newsbox-lg .checkbox a.active {
+.clickbox a:hover,
+.clickbox a:active,
+.clickbox a.active {
   color: #f5c658;
+}
+.newsbox-sm {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.newsbox-sm .picbox {
+  display: block;
+  overflow: hidden;
+  padding: 8px;
+}
+.newsbox-sm .picbox li {
+  display: block;
+  overflow: hidden;
+  width: 31.33%;
+  margin: 0 1%;
+  float: left;
+}
+.newsbox-sm .picbox li img {
+  width: 100%;
+}
+.newsbox-sm .infobox {
+  display: block;
+  overflow: hidden;
+}
+.newsbox-sm .infobox .title {
+  display: block;
+  overflow: hidden;
+  height: 24px;
+  line-height: 24px;
+}
+.newsbox-sm .infobox .title .tag {
+  padding: 2px 4px;
+  background: #f5c658;
+  color: #1f1f1f;
+  margin-right: 4px;
+}
+.newsbox-sm .infobox .title > p {
+  display: block;
+  overflow: hidden;
+  font-size: 1.2em;
 }
