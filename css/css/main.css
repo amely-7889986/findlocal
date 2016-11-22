@@ -797,7 +797,9 @@ a {
   font-size: 0.8em !important;
 }
 .newsbox-lg .title > p {
-  margin-top: 3em;
+  width: 80%;
+  margin-top: -1.2em;
+  margin-left: 4em;
   font-size: 1.2em;
   display: block;
   overflow: hidden;
@@ -806,7 +808,7 @@ a {
 }
 .newsbox-lg p.info {
   display: block;
-  padding: .4em 0 .4em 4.8em;
+  padding: .4em .4em .4em 4.8em;
 }
 .clickbox {
   display: block;
@@ -837,7 +839,7 @@ a {
 .newsbox-sm .picbox {
   display: block;
   overflow: hidden;
-  padding: 8px;
+  padding: .4em;
 }
 .newsbox-sm .picbox li {
   display: block;
@@ -860,13 +862,37 @@ a {
   line-height: 24px;
 }
 .newsbox-sm .infobox .title .tag {
-  padding: 2px 4px;
+  display: block;
+  width: 18%;
+  text-align: center;
   background: #f5c658;
   color: #1f1f1f;
-  margin-right: 4px;
+  margin-right: 2%;
 }
-.newsbox-sm .infobox .title > p {
+.newsbox-sm .infobox .title p {
   display: block;
+  width: 78%;
   overflow: hidden;
   font-size: 1.2em;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.newsbox-sm .infobox > p {
+  display: block;
+  padding: .4em;
+}
+.bottom-btn {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  margin: 1em auto;
+}
+.bottom-btn > a {
+  display: block;
+  margin: 0 8em;
+  padding: .4em .8em;
+  border-radius: 1.2em;
+  border: 1px solid #f5c658;
+  color: #f5c658;
 }

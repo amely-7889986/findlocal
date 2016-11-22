@@ -197,7 +197,10 @@
 			}
 		}
 		>p{
-			margin-top: 3em;
+			display: block;
+			width: 80%;
+			margin-top: -1.2em;
+			margin-left: 4em;
 			.font12;
 			display: block;
 			overflow: hidden;
@@ -207,7 +210,7 @@
 	}
 	p.info{
 		display: block;
-		padding: .4em 0 .4em 4.8em;
+		padding: .4em .4em .4em 4.8em;
 	}
 }
 .clickbox{
@@ -236,7 +239,7 @@
 	.picbox{
 		display: block;
 		overflow: hidden;
-		padding: 8px;
+		padding: .4em;
 		li{
 			display: block;
 			overflow: hidden;
@@ -257,16 +260,40 @@
 			height: 24px;
 			line-height: 24px;
 			.tag{
-				padding: 2px 4px;
+				display: block;
+				width: 18%;
+				.text-ac;
 				.bg-huang;
 				.col-hei;
-				margin-right: 4px;
+				margin-right: 2%;
 			}
-			>p{
+			p{
 				display: block;
+				width: 78%;
 				overflow: hidden;
 				.font12;
+				font-weight: bold;
+				text-overflow: ellipsis;
+				white-space: nowrap;
 			}
 		}
+		>p{
+			display: block;
+			padding: .4em;
+		}
+	}
+}
+.bottom-btn{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	margin: 1em auto;
+	>a{
+		display: block;
+		margin: 0 8em;
+		padding: .4em .8em;
+		border-radius: 1.2em;
+		border: 1px solid #f5c658;
+		.col-huang;
 	}
 }
