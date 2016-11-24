@@ -137,6 +137,9 @@ a {
 .bg-bai {
   background: #fff;
 }
+.bg-hei {
+  background: #1f1f1f;
+}
 .bg-huang {
   background: #f5c658;
 }
@@ -268,10 +271,10 @@ a {
   color: #fff;
 }
 #bottom-nav li .icon {
-  font-size: 1.6rem;
+  font-size: 1.8em;
 }
 #bottom-nav li p {
-  font-size: .4rem;
+  font-size: .4em;
 }
 #bottom-nav li.active {
   color: #fed572;
@@ -413,6 +416,23 @@ a {
   -moz-box-orient: horizontal;
   -webkit-box-orient: horizontal;
 }
+#header .head-box1 {
+  position: fixed;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  z-index: 10;
+  width: 100%;
+  height: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 40px;
+  display: -moz-box;
+  display: -webkit-box;
+  box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+}
 #header .flex1 {
   -webkit-box-flex: 1.0;
   -moz-box-flex: 1.0;
@@ -457,7 +477,10 @@ a {
 }
 #header .form-title {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #header .header-btn {
   display: inline-block;
@@ -465,7 +488,7 @@ a {
   height: 30px;
   text-align: left;
   padding: 0 10px;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 #header .header-btn > a {
   display: inline-block;
@@ -494,6 +517,9 @@ a {
 .padt10 {
   padding-top: 10px;
 }
+.padt50 {
+  padding-top: 50px;
+}
 .padd0 {
   padding-bottom: 0;
 }
@@ -518,20 +544,20 @@ a {
 .mgt10 {
   margin-top: 10px !important;
 }
+.mgt36 {
+  margin-top: 36px !important;
+}
 .mgb4 {
   margin-bottom: 4px;
 }
 .mgb10 {
   margin-bottom: 10px !important;
 }
-.mgb76 {
-  margin-bottom: 76px !important;
+.mgb64 {
+  margin-bottom: 64px !important;
 }
 .mgl10 {
   margin-left: 10px !important;
-}
-.mgb76 {
-  margin-bottom: 76px !important;
 }
 .w50 {
   width: 50%;
@@ -613,6 +639,7 @@ a {
   display: block;
   overflow: hidden;
   border-top: 2px solid #1f1f1f;
+  margin-bottom: 1em;
 }
 .loc-tab {
   display: block;
@@ -707,7 +734,6 @@ a {
   display: block;
   overflow: hidden;
   width: 100%;
-  margin-top: 1em;
 }
 .newslist h3 {
   text-align: center;
@@ -796,7 +822,7 @@ a {
   text-align: center;
   font-size: 0.8em !important;
 }
-.newsbox-lg .title > p {
+.newsbox-lg .title a.tit {
   width: 80%;
   margin-top: -1.2em;
   margin-left: 4em;
@@ -869,7 +895,7 @@ a {
   color: #1f1f1f;
   margin-right: 2%;
 }
-.newsbox-sm .infobox .title p {
+.newsbox-sm .infobox .title a.tit {
   display: block;
   width: 78%;
   overflow: hidden;
@@ -886,7 +912,7 @@ a {
   display: block;
   width: 100%;
   overflow: hidden;
-  margin: 1em auto;
+  margin: .4em auto;
 }
 .bottom-btn > a {
   display: block;
@@ -895,4 +921,30 @@ a {
   border-radius: 1.2em;
   border: 1px solid #f5c658;
   color: #f5c658;
+}
+.pagetab {
+  position: fixed;
+  display: block;
+  width: 100%;
+  background: #1f1f1f;
+  color: #f5c658;
+  overflow: hidden;
+  z-index: 999;
+}
+.pagetab li {
+  display: block;
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+.pagetab li a {
+  display: inline-block;
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+.pagetab li a:hover,
+.pagetab li a:active,
+.pagetab li a.active {
+  border-bottom: 2px solid #fed572;
+  color: #fed572;
 }
