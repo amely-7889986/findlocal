@@ -330,13 +330,14 @@
 	.pic-box{
 		display: block;
 		overflow: hidden;
+		height: 12em;
 		img{
 			width: 100%;
 		}
 	}
 	.titinfo{
 		position: absolute;
-		top: 6.4em;
+		top: 6em;
 		display: block;
 		width: 96%;
 		height: 6em;
@@ -390,22 +391,53 @@
 				-webkit-line-clamp: 2;
 				-webkit-box-orient: vertical;
 			}
+			.tagbox{
+				display: block;
+				margin: 8px 0;
+				.col-huang;
+			}
 			.detailbox{
-				position: absolute;
-				top: 6em;
 				display: block;
 				overflow: hidden;
-				width: 74%;
 				height: 2em;
 				line-height: 2em;
-				padding: .4em 0;
 				a{
+					display: inline-block;
 					margin: 0 4px;
+					float: left;
+					line-height: 2em;
 				}
 				a.active,a:active,a:hover{
 					.col-huang;
 				}
 			}
 		}
+	}
+}
+.pageinfo{
+	display: block;
+	overflow: hidden;
+	padding-top: 6em;
+	margin-bottom: 1em;
+	.border{
+		height: 1px;
+		box-sizing: border-box;
+		border-top: 1px solid #ddd;
+	}
+	>p{
+		padding: 4px 8px;
+		img{
+			width: 100%;
+		}
+	}
+}
+.related{
+	display: block;
+	overflow: hidden;
+	h2{
+		height: 2em;
+		line-height: 2em;
+		padding: 0 8px;
+		font-weight: 500;
 	}
 }

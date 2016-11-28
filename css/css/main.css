@@ -959,13 +959,14 @@ a {
 .pagetit-box .pic-box {
   display: block;
   overflow: hidden;
+  height: 12em;
 }
 .pagetit-box .pic-box img {
   width: 100%;
 }
 .pagetit-box .titinfo {
   position: absolute;
-  top: 6.4em;
+  top: 6em;
   display: block;
   width: 96%;
   height: 6em;
@@ -1022,21 +1023,52 @@ a {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+.pagetit-box .titinfo .info .tagbox {
+  display: block;
+  margin: 8px 0;
+  color: #f5c658;
+}
 .pagetit-box .titinfo .info .detailbox {
-  position: absolute;
-  top: 6em;
   display: block;
   overflow: hidden;
-  width: 74%;
   height: 2em;
   line-height: 2em;
-  padding: .4em 0;
 }
 .pagetit-box .titinfo .info .detailbox a {
+  display: inline-block;
   margin: 0 4px;
+  float: left;
+  line-height: 2em;
 }
 .pagetit-box .titinfo .info .detailbox a.active,
 .pagetit-box .titinfo .info .detailbox a:active,
 .pagetit-box .titinfo .info .detailbox a:hover {
   color: #f5c658;
+}
+.pageinfo {
+  display: block;
+  overflow: hidden;
+  padding-top: 6em;
+  margin-bottom: 1em;
+}
+.pageinfo .border {
+  height: 1px;
+  box-sizing: border-box;
+  border-top: 1px solid #ddd;
+}
+.pageinfo > p {
+  padding: 4px 8px;
+}
+.pageinfo > p img {
+  width: 100%;
+}
+.related {
+  display: block;
+  overflow: hidden;
+}
+.related h2 {
+  height: 2em;
+  line-height: 2em;
+  padding: 0 8px;
+  font-weight: 500;
 }
