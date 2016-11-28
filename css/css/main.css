@@ -140,6 +140,9 @@ a {
 .bg-hei {
   background: #1f1f1f;
 }
+.bg-lhuang {
+  background: #fed572;
+}
 .bg-huang {
   background: #f5c658;
 }
@@ -165,7 +168,7 @@ a {
   color: #1f1f1f;
 }
 .col-hui {
-  color: #666666;
+  color: #bfbfbf;
 }
 .col-lan {
   color: #21abf0;
@@ -835,12 +838,12 @@ a {
 .newsbox-lg p.info {
   display: block;
   padding: .4em .4em .4em 4.8em;
+  border-bottom: 1px solid #ddd;
 }
 .clickbox {
   display: block;
   overflow: hidden;
   padding: .4em;
-  border-top: 1px solid #ddd;
   font-size: 1.2em;
 }
 .clickbox a {
@@ -880,6 +883,7 @@ a {
 .newsbox-sm .infobox {
   display: block;
   overflow: hidden;
+  border-bottom: 1px solid #ddd;
 }
 .newsbox-sm .infobox .title {
   display: block;
@@ -947,4 +951,92 @@ a {
 .pagetab li a.active {
   border-bottom: 2px solid #fed572;
   color: #fed572;
+}
+.pagetit-box {
+  position: relative;
+  display: block;
+}
+.pagetit-box .pic-box {
+  display: block;
+  overflow: hidden;
+}
+.pagetit-box .pic-box img {
+  width: 100%;
+}
+.pagetit-box .titinfo {
+  position: absolute;
+  top: 6.4em;
+  display: block;
+  width: 96%;
+  height: 6em;
+  padding: 0 2%;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+  background: linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+}
+.pagetit-box .titinfo .manhead {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  top: 2.4em;
+  margin-right: .4em;
+}
+.pagetit-box .titinfo .manhead .pic {
+  display: block;
+  overflow: hidden;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border: 2px solid #f5c658;
+  box-sizing: border-box;
+}
+.pagetit-box .titinfo .manhead .pic img {
+  width: 100%;
+}
+.pagetit-box .titinfo .manhead a.focuse {
+  display: inline-block;
+  background: #fed572;
+  color: #1f1f1f;
+  border-radius: 4px;
+  padding: 2px 12px;
+  text-align: center;
+}
+.pagetit-box .titinfo .manhead a:active.focuse,
+.pagetit-box .titinfo .manhead a:hover.focuse {
+  background: #f5c658;
+}
+.pagetit-box .titinfo .info {
+  display: block;
+  overflow: hidden;
+  margin-top: 1.8em;
+}
+.pagetit-box .titinfo .info p.pagetit {
+  display: block;
+  height: 2.8em;
+  font-size: 1.4em !important;
+  color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.pagetit-box .titinfo .info .detailbox {
+  position: absolute;
+  top: 6em;
+  display: block;
+  overflow: hidden;
+  width: 74%;
+  height: 2em;
+  line-height: 2em;
+  padding: .4em 0;
+}
+.pagetit-box .titinfo .info .detailbox a {
+  margin: 0 4px;
+}
+.pagetit-box .titinfo .info .detailbox a.active,
+.pagetit-box .titinfo .info .detailbox a:active,
+.pagetit-box .titinfo .info .detailbox a:hover {
+  color: #f5c658;
 }
