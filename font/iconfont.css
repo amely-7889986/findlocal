@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1479976309048'); /* IE9*/
-  src: url('iconfont.eot?t=1479976309048#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1479976309048') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1479976309048') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1479976309048#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1480438416899'); /* IE9*/
+  src: url('iconfont.eot?t=1480438416899#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1480438416899') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1480438416899') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1480438416899#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -55,6 +55,8 @@
 .icon-dianzan:before { content: "\e60a"; }
 
 .icon-dizhi:before { content: "\e60d"; }
+
+.icon-xin:before { content: "\e665"; }
 
 .icon-jifen:before { content: "\e605"; }
 

@@ -434,10 +434,212 @@
 .related{
 	display: block;
 	overflow: hidden;
+	margin-bottom: 1em;
 	h2{
-		height: 2em;
-		line-height: 2em;
+		height: 2.4em;
+		line-height: 2.4em;
 		padding: 0 8px;
-		font-weight: 500;
+		font-weight: normal;
+		border-bottom: 1px solid #ddd;
+		.font14;
+	}
+}
+.relatedbox-lg{
+	display: block;
+	overflow: hidden;
+	margin: 8px;
+	position: relative;
+	.pic{
+		display: block;
+		overflow: hidden;
+		width: 100%;
+		img{
+			width: 100%;
+			vertical-align: top;
+		}
+	}
+	a.collect{
+		display: inline-block;
+		position: absolute;
+		top: .4em;
+		right: .4em;
+		background: rgba(245, 198, 88, 0.8);
+		.col-bai;
+		width: 2.4em;
+		height: 2.4em;
+		line-height: 2.4em;
+		.text-ac;
+		border-radius: 50%;
+		z-index: 99;
+		i{
+			.font14;
+		}
+	}
+	.titbox{
+		display: block;
+		width: 96%;
+		height: 8em;
+		padding: 0 2%;
+		overflow: hidden;
+		position: absolute;
+		bottom: 0;
+		background: -webkit-linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, .9)); 
+		background: -o-linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, .9)); 
+		background: -moz-linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, .9));
+		background: linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, .9));
+		p.tit{
+			.font14;
+			.col-bai;
+			margin-top: 1em;
+		}
+		.detail{
+			display: block;
+			overflow: hidden;
+			.prize{
+				.l-left;
+				.norprize{
+					.col-bai;
+					text-decoration: line-through;
+					margin-left: 4px;
+				}
+			}
+			a.btn-buy{
+				display: inline-block;
+				.l-right;
+				.col-huang;
+				.font14;
+				i{
+					margin-right: 4px;
+				}
+			}
+		}
+	}
+}
+.relatedbox-sm{
+	display: block;
+	padding: 8px;
+	overflow: hidden;
+	.probox{
+		display: block;
+		overflow: hidden;
+		.pic{
+			display: block;
+			width: 100%;
+			overflow: hidden;
+			img{
+				width: 100%;
+			}
+		}
+		a.collect{
+			display: inline-block;
+			position: absolute;
+			top: .4em;
+			right: .4em;
+			background: rgba(245, 198, 88, 0.8);
+			.col-bai;
+			width: 2.4em;
+			height: 2.4em;
+			line-height: 2.4em;
+			.text-ac;
+			border-radius: 50%;
+			z-index: 99;
+			i{
+				.font14;
+			}
+		}
+	}
+	.titbox{
+		display: block;
+		overflow: hidden;
+		.detail{
+			display: block;
+			overflow: hidden;
+			line-height: 1.4em;
+			.prize{
+				.l-left;
+				.norprize{
+					.font8;
+					text-decoration: line-through;
+					.col-hui;
+				}
+			}
+			a.btn-buy{
+				.l-right;
+				.col-huang;
+			}
+		}
+	}
+}
+.comment{
+	display: block;
+	overflow: hidden;
+	h2{
+		display: block;
+		overflow: hidden;
+		font-weight: normal;
+		height: 2.8em;
+		line-height: 2.8em;
+		padding: 0 8px;
+		border-bottom: 1px solid #ddd;
+	}
+	.commentbox{
+		display: block;
+		overflow: hidden;
+		padding: 8px;
+		border-bottom: 1px solid #ddd;
+		.manhead{
+			display: block;
+			width: 24%;
+			height: auto;
+			.l-left;
+			.pic{
+				display: block;
+				width: 6em;
+				height: 6em;
+				border-radius: 50%;
+				box-sizing: border-box;
+				border: 2px solid #f5c658;
+				img{
+					width: 100%;
+				}
+			}
+		}
+		.info{
+			display: block;
+			.l-left;
+			width: 76%;
+			.namebox{
+				display: block;
+				overflow: hidden;
+				.font12;
+				>span{
+					font-weight: 600;
+				}
+				>a:hover,a:active{
+					.col-huang;
+				}
+			}
+			.date{
+				.col-hui;
+				.font10;
+				span{
+					margin-right: 8px;
+				}
+			}
+			.replybox{
+				display: block;
+				overflow: hidden;
+				.replyname{
+					margin-right: 4px;
+				}
+			}
+			.postxt{
+				display: block;
+				overflow: hidden;
+				border: 1px solid #ddd;
+				padding: 4px;
+				margin-top: 4px;
+			}
+		}
 	}
 }

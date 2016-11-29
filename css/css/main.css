@@ -188,6 +188,9 @@ a {
 .col-huang {
   color: #f5c658;
 }
+.col-red {
+  color: #e60000;
+}
 .font8 {
   font-size: 0.8em !important;
 }
@@ -258,7 +261,7 @@ a {
 }
 #bottom-nav {
   position: fixed;
-  bottom: 0;
+  bottom: -0.2em;
   width: 100%;
   z-index: 9999;
 }
@@ -323,6 +326,72 @@ a {
   width: 60%;
   line-height: 3em;
   color: #ffffff;
+  font-size: 1.4em !important;
+}
+#bottom-nav .commentxt {
+  display: block;
+  width: 96%;
+  padding: 0 2%;
+  background: #fff;
+  height: 3.4em;
+  bottom: 0;
+  border-top: 1px solid #ddd;
+}
+#bottom-nav .commentxt .inputbox {
+  display: block;
+  float: left;
+  width: 74%;
+  height: 2.2em;
+  line-height: 2.2em;
+  margin: .6em auto;
+  border-bottom: 1px solid #ddd;
+}
+#bottom-nav .commentxt .inputbox i {
+  color: #bfbfbf;
+  font-size: 1.8em;
+}
+#bottom-nav .commentxt .inputbox input {
+  display: inline-block;
+  float: left;
+  width: 80%;
+  height: 2.2em;
+  line-height: 2.2em;
+  border: 0;
+}
+#bottom-nav .commentxt .inputbox-l {
+  display: block;
+  float: left;
+  width: 100%;
+  height: 2.2em;
+  line-height: 2.2em;
+  margin: .6em auto;
+  border-bottom: 1px solid #ddd;
+}
+#bottom-nav .commentxt .inputbox-l i {
+  color: #bfbfbf;
+  font-size: 1.8em;
+}
+#bottom-nav .commentxt .inputbox-l input {
+  display: inline-block;
+  width: 90%;
+  float: left;
+  height: 2.2em;
+  line-height: 2.2em;
+  border: 0;
+}
+#bottom-nav .commentxt > a {
+  display: inline-block;
+  float: right;
+  width: 2.4em;
+  height: 2.4em;
+  line-height: 2.4em;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  background: #f5c658;
+  margin: .5em 4px;
+}
+#bottom-nav .commentxt > a i {
   font-size: 1.4em !important;
 }
 .bottom-tab {
@@ -555,6 +624,9 @@ a {
 }
 .mgb10 {
   margin-bottom: 10px !important;
+}
+.mgb32 {
+  margin-bottom: 3.2em;
 }
 .mgb64 {
   margin-bottom: 64px !important;
@@ -1065,10 +1137,213 @@ a {
 .related {
   display: block;
   overflow: hidden;
+  margin-bottom: 1em;
 }
 .related h2 {
-  height: 2em;
-  line-height: 2em;
+  height: 2.4em;
+  line-height: 2.4em;
   padding: 0 8px;
-  font-weight: 500;
+  font-weight: normal;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.4em !important;
+}
+.relatedbox-lg {
+  display: block;
+  overflow: hidden;
+  margin: 8px;
+  position: relative;
+}
+.relatedbox-lg .pic {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.relatedbox-lg .pic img {
+  width: 100%;
+  vertical-align: top;
+}
+.relatedbox-lg a.collect {
+  display: inline-block;
+  position: absolute;
+  top: .4em;
+  right: .4em;
+  background: rgba(245, 198, 88, 0.8);
+  color: #ffffff;
+  width: 2.4em;
+  height: 2.4em;
+  line-height: 2.4em;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 99;
+}
+.relatedbox-lg a.collect i {
+  font-size: 1.4em !important;
+}
+.relatedbox-lg .titbox {
+  display: block;
+  width: 96%;
+  height: 8em;
+  padding: 0 2%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  background: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+}
+.relatedbox-lg .titbox p.tit {
+  font-size: 1.4em !important;
+  color: #ffffff;
+  margin-top: 1em;
+}
+.relatedbox-lg .titbox .detail {
+  display: block;
+  overflow: hidden;
+}
+.relatedbox-lg .titbox .detail .prize {
+  float: left;
+}
+.relatedbox-lg .titbox .detail .prize .norprize {
+  color: #ffffff;
+  text-decoration: line-through;
+  margin-left: 4px;
+}
+.relatedbox-lg .titbox .detail a.btn-buy {
+  display: inline-block;
+  float: right;
+  color: #f5c658;
+  font-size: 1.4em !important;
+}
+.relatedbox-lg .titbox .detail a.btn-buy i {
+  margin-right: 4px;
+}
+.relatedbox-sm {
+  display: block;
+  padding: 8px;
+  overflow: hidden;
+}
+.relatedbox-sm .probox {
+  display: block;
+  overflow: hidden;
+}
+.relatedbox-sm .probox .pic {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.relatedbox-sm .probox .pic img {
+  width: 100%;
+}
+.relatedbox-sm .probox a.collect {
+  display: inline-block;
+  position: absolute;
+  top: .4em;
+  right: .4em;
+  background: rgba(245, 198, 88, 0.8);
+  color: #ffffff;
+  width: 2.4em;
+  height: 2.4em;
+  line-height: 2.4em;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 99;
+}
+.relatedbox-sm .probox a.collect i {
+  font-size: 1.4em !important;
+}
+.relatedbox-sm .titbox {
+  display: block;
+  overflow: hidden;
+}
+.relatedbox-sm .titbox .detail {
+  display: block;
+  overflow: hidden;
+  line-height: 1.4em;
+}
+.relatedbox-sm .titbox .detail .prize {
+  float: left;
+}
+.relatedbox-sm .titbox .detail .prize .norprize {
+  font-size: 0.8em !important;
+  text-decoration: line-through;
+  color: #bfbfbf;
+}
+.relatedbox-sm .titbox .detail a.btn-buy {
+  float: right;
+  color: #f5c658;
+}
+.comment {
+  display: block;
+  overflow: hidden;
+}
+.comment h2 {
+  display: block;
+  overflow: hidden;
+  font-weight: normal;
+  height: 2.8em;
+  line-height: 2.8em;
+  padding: 0 8px;
+  border-bottom: 1px solid #ddd;
+}
+.comment .commentbox {
+  display: block;
+  overflow: hidden;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+.comment .commentbox .manhead {
+  display: block;
+  width: 24%;
+  height: auto;
+  float: left;
+}
+.comment .commentbox .manhead .pic {
+  display: block;
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 2px solid #f5c658;
+}
+.comment .commentbox .manhead .pic img {
+  width: 100%;
+}
+.comment .commentbox .info {
+  display: block;
+  float: left;
+  width: 76%;
+}
+.comment .commentbox .info .namebox {
+  display: block;
+  overflow: hidden;
+  font-size: 1.2em;
+}
+.comment .commentbox .info .namebox > span {
+  font-weight: 600;
+}
+.comment .commentbox .info .namebox > a:hover,
+.comment .commentbox .info .namebox a:active {
+  color: #f5c658;
+}
+.comment .commentbox .info .date {
+  color: #bfbfbf;
+  font-size: 1em;
+}
+.comment .commentbox .info .date span {
+  margin-right: 8px;
+}
+.comment .commentbox .info .replybox {
+  display: block;
+  overflow: hidden;
+}
+.comment .commentbox .info .replybox .replyname {
+  margin-right: 4px;
+}
+.comment .commentbox .info .postxt {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  padding: 4px;
+  margin-top: 4px;
 }
