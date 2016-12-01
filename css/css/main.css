@@ -1256,6 +1256,15 @@ a {
   display: block;
   overflow: hidden;
 }
+.relatedbox-sm .titbox p.tit {
+  height: 3em;
+  line-height: 1.4em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 .relatedbox-sm .titbox .detail {
   display: block;
   overflow: hidden;
@@ -1346,4 +1355,72 @@ a {
   border: 1px solid #ddd;
   padding: 4px;
   margin-top: 4px;
+}
+.prolist {
+  display: block;
+  overflow: hidden;
+}
+.prolist .probox {
+  display: block;
+  overflow: hidden;
+  width: 48%;
+  margin: 4px 1%;
+  float: left;
+  background: #fff;
+}
+.prolist .probox .pic {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.prolist .probox .pic img {
+  width: 100%;
+}
+.prolist .probox a.collect {
+  display: inline-block;
+  position: absolute;
+  top: .4em;
+  right: .4em;
+  background: rgba(245, 198, 88, 0.8);
+  color: #ffffff;
+  width: 2.4em;
+  height: 2.4em;
+  line-height: 2.4em;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 99;
+}
+.prolist .probox a.collect i {
+  font-size: 1.4em !important;
+}
+.prolist .titbox {
+  display: block;
+  overflow: hidden;
+  padding: 4px;
+}
+.prolist .titbox p.tit {
+  height: 3em;
+  line-height: 1.4em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.prolist .titbox .detail {
+  display: block;
+  overflow: hidden;
+  line-height: 1.4em;
+}
+.prolist .titbox .detail .prize {
+  float: left;
+}
+.prolist .titbox .detail .prize .norprize {
+  font-size: 0.8em !important;
+  text-decoration: line-through;
+  color: #bfbfbf;
+}
+.prolist .titbox .detail a.btn-buy {
+  float: right;
+  color: #f5c658;
 }
