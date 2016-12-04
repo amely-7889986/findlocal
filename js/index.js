@@ -24,98 +24,64 @@ function init(){
 }
 init();
 
+var loading = false;
+    $(window).scroll(function () {
+        if ((($(window).scrollTop() + $(window).height()) + 250) >= $(document).height()) {
+            //alert($(window).scrollTop() + "_" + (($(window).height()) + 250) + "_" + $(document).height())
+            if (loading == false) {
+                loading = true;
+                $('#loadingbar').css("display", "block");
+                $.getJSON("data/data.json?start=" + $('#loaded_max').val(), function (loaded) {
+                    var RtnObj = loaded;
+                    setTimeout(function () {
+                        $('#list_more').append(returnHtml(RtnObj));
+                        $('#loaded_max').val(parseInt($('#loaded_max').val()) + 6);
+                        $('#loadingbar').css("display", "none");
+                        loading = false;
+                    }, 2000);
+                });                
 
-// 产品列表上拉加载
-var myScroll,pullDownEl, pullDownOffset,pullUpEl, pullUpOffset,generatedCount = 0;  
-  
-function loaded() {  
-    //动画部分  
-    pullDownEl = document.getElementById('pullDown');  
-    pullDownOffset = pullDownEl.offsetHeight;  
-    pullUpEl = document.getElementById('pullUp');     
-    pullUpOffset = pullUpEl.offsetHeight;  
-    myScroll = new iScroll('wrapper', {  
-        useTransition: true,  
-        topOffset: pullDownOffset,  
-        onRefresh: function () {  
-            if (pullDownEl.className.match('loading')) {  
-                pullDownEl.className = '';  
-                pullDownEl.querySelector('.pullDownLabel').innerHTML = '下拉刷新';  
-            } else if (pullUpEl.className.match('loading')) {  
-                pullUpEl.className = '';  
-                pullUpEl.querySelector('.pullUpLabel').innerHTML = '上拉加载更多';  
-            }  
-        },  
-        onScrollMove: function () {  
-          
-            if (this.y > 5 && !pullDownEl.className.match('flip')) {  
-                pullDownEl.className = 'flip';  
-                pullDownEl.querySelector('.pullDownLabel').innerHTML = '释放刷新';  
-                this.minScrollY = 0;  
-            } else if (this.y < 5 && pullDownEl.className.match('flip')) {  
-                pullDownEl.className = '';  
-                pullDownEl.querySelector('.pullDownLabel').innerHTML = 'Pull down to refresh...';  
-                this.minScrollY = -pullDownOffset;  
-            } else if (this.y < (this.maxScrollY - 5) && !pullUpEl.className.match('flip')) {  
-                pullUpEl.className = 'flip';  
-                pullUpEl.querySelector('.pullUpLabel').innerHTML = '释放刷新';  
-                this.maxScrollY = this.maxScrollY;  
-            } else if (this.y > (this.maxScrollY + 5) && pullUpEl.className.match('flip')) {  
-                pullUpEl.className = '';  
-                pullUpEl.querySelector('.pullUpLabel').innerHTML = 'Pull up to load more...';  
-                this.maxScrollY = pullUpOffset;  
-            }  
-        },  
-        onScrollEnd: function () {  
-            if (pullDownEl.className.match('flip')) {  
-                pullDownEl.className = 'loading';  
-                pullDownEl.querySelector('.pullDownLabel').innerHTML = '加载中';                 
-                pullDownAction();   // Execute custom function (ajax call?)  
-            } else if (pullUpEl.className.match('flip')) {  
-                pullUpEl.className = 'loading';  
-                pullUpEl.querySelector('.pullUpLabel').innerHTML = '加载中';                 
-                pullUpAction(); // Execute custom function (ajax call?)  
-            }  
-        }  
-    });  
-      
-    loadAction();  
-}  
-document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);//阻止冒泡  
-document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 0); }, false);  
-  
-//初始状态，加载数据  
-function loadAction(){  
-    var el, li;  
-    el = document.getElementById('thelist');  
-    for (i=0; i<10; i++) {  
-        li = document.createElement('li');  
-        li.innerText = '初始数据--' + (++generatedCount);  
-        el.appendChild(li, el.childNodes[0]);  
-    }  
-    myScroll.refresh();  
-}  
-  
-//下拉刷新当前数据  
-function pullDownAction () {  
-    setTimeout(function () {  
-        //这里执行刷新操作  
-          
-        myScroll.refresh();   
-    }, 400);  
-}  
-  
-//上拉加载更多数据  
-function pullUpAction () {  
-    setTimeout(function () {  
-        var el, li;  
-        el = document.getElementById('thelist');  
-        for (i=0; i<10; i++) {  
-            li = document.createElement('li');  
-            li.innerText = '上拉加载--' + (++generatedCount);  
-            el.appendChild(li, el.childNodes[0]);  
-        }  
-        myScroll.refresh();  
-    }, 400);  
-}  
-		
+            }
+        }
+    });
+    function returnHtml(options) {
+        var ohtml = "<li dataindex=\"{0}\">"
+        	+ "<a class=\"pic\" href=\"proinfo.html\"><img src=\"{1}\" /></a>"
+            + "<a class=\"collect\" href=\"javascript:void(0)\">"
+                + "<i class=\"icon iconfont\">&#xe665;</i>"
+            + "</a>"
+            + "<div class=\"titbox\">"
+                + "<p class=\"tit\"></p>"
+                + "<div class=\"detail\">"
+	                + "<div class=\"prize\">"
+		                + "<span class=\"col-red\"></span>"
+		                + "<span class=\"norprize\"></span>"
+	                + "</div>"
+	                + "<a class=\"btn-buy\" href=\"proinfo.html\">"
+		                + "<i class=\"icon iconfont\">&#xe856</i><span class=\"l-left\">购买</span>"
+		            + "</a>"
+                + "</div>"
+            + "</div>"
+        + "</li>";
+        
+        var ohtmls;
+        if (typeof options != "string" && options.length > 0) {
+            for (i = 0; i < options.length; i++) {
+                var option = options[i];
+                ohtmls += ohtml.format(option.dataindex, option.imgpath, option.wherepalce, option.name, option.price, option.elsething);
+            }
+        }
+        return $(ohtmls);
+    }
+
+    $(document).ready(function () {
+        $('#loaded_max').val(0);
+    });
+
+    //组合字符串
+    String.prototype.format = function () {
+        var args = arguments;
+        return this.replace(/{(\d{1})}/g, function () {
+            return args[arguments[1]];
+        });
+    }	

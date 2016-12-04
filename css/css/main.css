@@ -489,7 +489,6 @@ a {
   -webkit-box-orient: horizontal;
 }
 #header .head-box1 {
-  position: fixed;
   min-width: 320px;
   max-width: 640px;
   margin: 0 auto;
@@ -1361,6 +1360,7 @@ a {
   overflow: hidden;
 }
 .prolist .probox {
+  position: relative;
   display: block;
   overflow: hidden;
   width: 48%;

@@ -21,7 +21,7 @@
     <link href="css/css/main.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div class="header" id="header">
+    <div class="header" id="header" style="position:fixed;">
         <div class="head-box1 page-width bg-bai box-shadow l-float">
             <div class="header-logo flex1">
                 <a onclick="history.back()"><i class="icon iconfont font18 col-huang">&#xe603;</i></a>
@@ -47,8 +47,8 @@
             </div>
         </div>
         <div class="page-width">
-            <div class="prolist">
-                <div class="probox">
+            <ul class="prolist" id="list_more">
+                <li class="probox">
                     <a href="proinfo.html" class="pic"><img src="update/propic-03.png" alt=""></a>
                     <a href="javascript:void(0)" class="collect"><i class="icon iconfont">&#xe665;</i></a>
                     <div class="titbox">
@@ -61,8 +61,8 @@
                             <a href="proinfo.html" class="btn-buy"><i class="icon iconfont l-left">&#xe856;</i><span class="l-left">购买</span></a>
                         </div>
                     </div>
-                </div>
-                <div class="probox">
+                </li>
+                <li class="probox">
                     <a href="proinfo.html" class="pic"><img src="update/propic-01.png" alt=""></a>
                     <a href="javascript:void(0)" class="collect"><i class="icon iconfont">&#xe665;</i></a>
                     <div class="titbox">
@@ -75,8 +75,8 @@
                             <a href="proinfo.html" class="btn-buy"><i class="icon iconfont l-left">&#xe856;</i><span class="l-left">购买</span></a>
                         </div>
                     </div>
-                </div>
-                <div class="probox">
+                </li>
+                <li class="probox">
                     <a href="proinfo.html" class="pic"><img src="update/propic-02.png" alt=""></a>
                     <a href="javascript:void(0)" class="collect"><i class="icon iconfont">&#xe665;</i></a>
                     <div class="titbox">
@@ -89,8 +89,8 @@
                             <a href="proinfo.html" class="btn-buy"><i class="icon iconfont l-left">&#xe856;</i><span class="l-left">购买</span></a>
                         </div>
                     </div>
-                </div>
-                <div class="probox">
+                </li>
+                <li class="probox">
                     <a href="proinfo.html" class="pic"><img src="update/propic-03.png" alt=""></a>
                     <a href="javascript:void(0)" class="collect"><i class="icon iconfont">&#xe665;</i></a>
                     <div class="titbox">
@@ -103,8 +103,8 @@
                             <a href="proinfo.html" class="btn-buy"><i class="icon iconfont l-left">&#xe856;</i><span class="l-left">购买</span></a>
                         </div>
                     </div>
-                </div>
-                <div class="probox">
+                </li>
+                <li class="probox">
                     <a href="proinfo.html" class="pic"><img src="update/propic-02.png" alt=""></a>
                     <a href="javascript:void(0)" class="collect"><i class="icon iconfont">&#xe665;</i></a>
                     <div class="titbox">
@@ -117,8 +117,8 @@
                             <a href="proinfo.html" class="btn-buy"><i class="icon iconfont l-left">&#xe856;</i><span class="l-left">购买</span></a>
                         </div>
                     </div>
-                </div>
-                <div class="probox">
+                </li>
+                <li class="probox">
                     <a href="proinfo.html" class="pic"><img src="update/propic-01.png" alt=""></a>
                     <a href="javascript:void(0)" class="collect"><i class="icon iconfont">&#xe665;</i></a>
                     <div class="titbox">
@@ -131,8 +131,11 @@
                             <a href="proinfo.html" class="btn-buy"><i class="icon iconfont l-left">&#xe856;</i><span class="l-left">购买</span></a>
                         </div>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
+        </div>
+        <div class="page-width" id="loadingbar" style="display: none;text-align:center;">
+            <img alt="" src="images/loading.gif" style="margin:0 auto;" />
         </div>
     </div>
     <div id="bottom-nav">
