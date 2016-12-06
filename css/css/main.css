@@ -169,6 +169,7 @@ a {
 }
 .pro-banner img {
   width: 100%;
+  vertical-align: top;
 }
 .pro-banner .swiper-pagination1 .swiper-pagination-bullet {
   width: 8px;
@@ -417,10 +418,14 @@ a {
   max-width: 640px;
   margin: 0 auto;
   background: #fff;
-  height: 3.4em;
-  line-height: 3.4em;
+  height: 4em;
+  line-height: 4em;
   border-top: 1px solid #ddd;
   overflow: hidden;
+}
+.bottom-tab > a {
+  float: left;
+  display: inline-block;
 }
 .bottom-tab a.account {
   padding: 1em 1.8em;
@@ -1441,4 +1446,157 @@ a {
 .prolist .titbox .detail a.btn-buy {
   float: right;
   color: #f5c658;
+}
+.prodetail {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  margin: .5em 0;
+  padding: 8px 4px;
+}
+.prodetail h2.tit {
+  font-size: 1.4em !important;
+}
+.prodetail .prize {
+  display: block;
+  overflow: hidden;
+}
+.prodetail .prize .norprize {
+  font-size: 0.8em !important;
+  color: #bfbfbf;
+  text-decoration: line-through;
+}
+.shopbox {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: .5em;
+}
+.shopbox h2.tit {
+  height: 2.8em;
+  line-height: 2.8em;
+  padding: 0 8px;
+  font-size: 1.2em;
+  font-weight: normal;
+  border-bottom: 1px solid #ddd;
+}
+.shopbox .groupbox {
+  display: block;
+  overflow: hidden;
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+}
+.shopbox .joinlink {
+  display: block;
+  position: relative;
+  height: 4em;
+  width: 94%;
+  border-radius: 3em;
+  border: 1px solid #f5c658;
+  box-sizing: content-box;
+}
+.shopbox .joinlink .manhead {
+  display: inline-block;
+  overflow: hidden;
+  height: 3.8em;
+  width: 3.8em;
+  border-radius: 50%;
+  border: 1px solid #f5c658;
+  box-sizing: content-box;
+}
+.shopbox .joinlink .manhead img {
+  width: 100%;
+  vertical-align: top;
+}
+.shopbox .joinlink .detail {
+  display: block;
+  overflow: hidden;
+  width: 68%;
+  padding: 0 1%;
+  float: left;
+  line-height: 2em;
+}
+.shopbox .joinlink .detail .name {
+  white-space: nowrap;
+  font-size: 1.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.shopbox .joinlink .detail .leftime {
+  font-size: 0.8em !important;
+}
+.shopbox .joinlink .join {
+  background: #f5c658;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  z-index: 999;
+  top: .5em;
+  right: -4px;
+  height: 3em;
+  width: 3em;
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  text-align: center;
+  border-radius: 4px;
+}
+.shopbox .joinlink a.btn-join {
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  top: .6em;
+  right: .4em;
+}
+.shopbox .commentbox {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 4px 8px;
+}
+.shopbox .commentbox .manhead {
+  display: block;
+  overflow: hidden;
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  float: left;
+  border: 2px solid #f5c658;
+}
+.shopbox .commentbox .manhead img {
+  width: 100%;
+  vertical-align: top;
+}
+.shopbox .commentbox .detailbox {
+  display: block;
+  overflow: hidden;
+  width: 56%;
+  margin-left: 4px;
+  float: left;
+}
+.shopbox .commentbox .stars {
+  display: block;
+  color: #f5c658;
+  float: right;
+}
+.shopbox .commentbox .stars i {
+  font-size: 1em;
+}
+.infobox {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.infobox p {
+  width: 100%;
+}
+.infobox img {
+  width: 100%;
 }
