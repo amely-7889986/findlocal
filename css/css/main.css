@@ -320,13 +320,29 @@ a {
   text-align: center;
 }
 #bottom-nav .shopbtn a.home {
-  width: 20%;
+  width: 16%;
   border-right: 1px solid #ddd;
   padding-top: .3em;
 }
 #bottom-nav .shopbtn a.collect {
-  width: 20%;
+  width: 16%;
   padding-top: .3em;
+}
+#bottom-nav .shopbtn a.onebuy {
+  width: 34%;
+  background: #f5c658;
+  color: #1f1f1f;
+}
+#bottom-nav .shopbtn a.onebuy p {
+  line-height: 1.8em;
+}
+#bottom-nav .shopbtn a.joinbuy {
+  width: 34%;
+  background: #1f1f1f;
+  color: #f5c658;
+}
+#bottom-nav .shopbtn a.joinbuy p {
+  line-height: 1.8em;
 }
 #bottom-nav .shopbtn a.addcar {
   width: 30%;
@@ -422,10 +438,6 @@ a {
   line-height: 4em;
   border-top: 1px solid #ddd;
   overflow: hidden;
-}
-.bottom-tab > a {
-  float: left;
-  display: inline-block;
 }
 .bottom-tab a.account {
   padding: 1em 1.8em;
@@ -1599,4 +1611,118 @@ a {
 }
 .infobox img {
   width: 100%;
+}
+.ordertab {
+  position: fixed;
+  display: block;
+  width: 100%;
+  background: #1f1f1f;
+  color: #f5c658;
+  overflow: hidden;
+  z-index: 999;
+}
+.ordertab li {
+  display: block;
+  width: 16.66%;
+  float: left;
+  text-align: center;
+  font-size: 0.8em !important;
+}
+.ordertab li a {
+  display: inline-block;
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+.ordertab li a:hover,
+.ordertab li a:active,
+.ordertab li a.active {
+  border-bottom: 2px solid #fed572;
+  color: #fed572;
+}
+.orderlist {
+  display: block;
+  overflow: hidden;
+}
+.orderbox {
+  background: #fff;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+.orderbox .state {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  height: 2.4em;
+  line-height: 2.4em;
+  color: #1f1f1f;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+.orderbox .proinfo {
+  width: 96%;
+  display: block;
+  overflow: hidden;
+  padding: 4px 2%;
+  border-bottom: 1px solid #ddd;
+}
+.orderbox .proinfo .pic {
+  display: block;
+  width: 24%;
+  height: 6em;
+  overflow: hidden;
+  float: left;
+}
+.orderbox .proinfo .pic img {
+  width: 100%;
+  vertical-align: top;
+}
+.orderbox .proinfo .detail {
+  display: block;
+  width: 74%;
+  margin-left: 2%;
+  overflow: hidden;
+  float: left;
+}
+.orderbox .proinfo .detail p.tit {
+  font-size: 1.2em;
+  font-weight: 600;
+  display: inline-block;
+}
+.orderbox .countall {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  text-align: right;
+  height: 2.8em;
+  line-height: 2.8em;
+}
+.orderbox .orderbtn {
+  display: block;
+  overflow: hidden;
+}
+.orderbox .orderbtn > a {
+  float: right;
+  margin: 8px 4px;
+}
+a.btn {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 2px 8px;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+a.btn.default {
+  border-color: #1f1f1f;
+  color: #1f1f1f;
+}
+a.btn.success {
+  border-color: #fed572;
+  color: #f5c658;
+}
+a.btn.warning {
+  border-color: #fa7669;
+  color: #fa7669;
 }
