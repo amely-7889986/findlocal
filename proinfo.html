@@ -129,10 +129,10 @@
         </div>
     </div>
     <div id="bottom-nav">
-        <div class="shopbtn">
+        <div class="page-width shopbtn">
             <a href="index.html" class="home"><i class="icon iconfont">&#xe613;</i><p>首页</p></a>
             <a href="javascript:void(0)" class="collect"><i class="icon iconfont">&#xe665;</i><p>收藏</p></a>
-            <a href="" class="onebuy"><p class="price font12">¥146.00</p><p class="font8">购买</p></a>
+            <a href="javascript:void(0)" id="onebuy" class="onebuy"><p class="price font12">¥146.00</p><p class="font8">购买</p></a>
             <a href="" class="joinbuy"><p class="prize font12">¥123.00</p><p class="font8">3人拼单</p></a>
         </div>
     </div>
@@ -147,6 +147,22 @@ var swiper = new Swiper('.swiper-container1', {
     paginationClickable: true,
     spaceBetween: 10,
     autoplay: 5000,//可选选项，自动滑动
+});
+</script>
+<script src="js/layer.js" type="text/javascript"></script>
+<script>
+    $('#onebuy').on('click', function(){
+        layer.open({
+        type: 1,
+        content: '<div class="addcarbox page-width"><div class="prosec"><div class="pic l-left"><img src="update/propic-01.png" alt=""></div><div class="l-left info"><p class="col-hong font18">¥1870.00</p><p class="font14"><span>库存:</span><span>2348</span></p><p class="col-cheng font10">请选择规格</p></div><a href=""><i class="icon iconfont col-hui icon-del0"></i></a></div><div class="prosize"><p class="col-cheng">规格：</p><div class="tag"><a href="javascipt:void(0)">500*100A</a><a href="javascipt:void(0)">500*100A</a><a href="javascipt:void(0)">500*100A</a><a href="javascipt:void(0)">500*100A</a><a href="javascipt:void(0)">500*100A</a><a href="javascipt:void(0)">500*100A</a><a href="javascipt:void(0)">500*100A</a></div></div><div class="pronum"><span class="l-left">购买数量：</span><span class="l-right"><a href="javascipt:void(0)" class="l-left">+</a><input type="text" class="l-left"><a href="javascipt:void(0)" class="l-left">-</a></span></div><a href="orderinfo.html" class="confirm">确定</a></div>',
+        anim: 'up',
+        style: 'position:fixed; bottom:0; left:0; width: 100%; max-height: 400px; padding:10px 0; border:none; background:#fff;',
+      });
+    });
+</script>
+<script>
+$("a.collect").click(function(){
+  $("a.collect i.icon-shoucang1").toggleClass("icon-shoucang");
 });
 </script>
 </html>
