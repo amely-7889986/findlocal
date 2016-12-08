@@ -611,6 +611,26 @@ a {
   font-size: 18px;
   color: #fff;
 }
+#header .userhead-btn {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: left;
+  padding: 0 10px;
+  margin-top: 2px;
+}
+#header .userhead-btn > a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: none;
+  text-align: center;
+  line-height: 24px;
+}
+#header .userhead-btn i {
+  font-size: 18px;
+  color: #fff;
+}
 .pad1 {
   padding: 0.2rem 0;
 }
@@ -1611,6 +1631,97 @@ a {
 }
 .infobox img {
   width: 100%;
+}
+.addcarbox {
+  display: block;
+  overflow: hidden;
+}
+.addcarbox .prosec {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 0 8px 8px 8px;
+}
+.addcarbox .prosec .pic {
+  width: 6em;
+  height: 6em;
+  float: left;
+}
+.addcarbox .prosec .pic img {
+  width: 100%;
+}
+.addcarbox .prosec .info {
+  float: left;
+  display: block;
+  overflow: hidden;
+  margin-left: 8px;
+}
+.addcarbox .prosec > a {
+  display: block;
+  overflow: hidden;
+  width: 1.4em;
+  height: 1.4em;
+  font-size: 1.4em !important;
+  position: absolute;
+  right: 8px;
+  top: 4px;
+}
+.addcarbox .prosec > a i {
+  font-size: 1.4em !important;
+}
+.addcarbox .prosize {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 0 8px;
+}
+.addcarbox .prosize > p {
+  display: block;
+  overflow: hidden;
+}
+.addcarbox .prosize .tag {
+  display: block;
+  margin: 4px 0;
+  overflow: hidden;
+}
+.addcarbox .prosize .tag > a {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-right: 8px;
+  float: left;
+  border-radius: 4px;
+  border: 1px solid #f5c658;
+}
+.addcarbox .prosize .tag > a:hover,
+.addcarbox .prosize .tag > a:active,
+.addcarbox .prosize .tag > a.active {
+  background: #f5c658;
+}
+.addcarbox .pronum {
+  display: block;
+  height: 2.4em;
+  line-height: 2.4em;
+  padding: 4px 8px;
+}
+.addcarbox .pronum input[type="text"] {
+  width: 4em;
+  border: 1px solid #f5c658;
+  height: 1.8em;
+  margin: .2em auto;
+}
+.addcarbox .pronum a {
+  font-size: 1.2em;
+  margin: 0 4px;
+}
+.addcarbox > a.confirm {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background: #f5c658;
+  color: #1f1f1f;
+  text-align: center;
+  height: 2.4em;
+  line-height: 2.4em;
 }
 .ordertab {
   position: fixed;
