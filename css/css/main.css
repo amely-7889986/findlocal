@@ -1837,3 +1837,117 @@ a.btn.warning {
   border-color: #fa7669;
   color: #fa7669;
 }
+.personal {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 1em;
+}
+.personal .bg-pic {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+.personal .bg-pic img {
+  width: 100%;
+  vertical-align: top;
+}
+.personal .manhead {
+  position: relative;
+  z-index: 99;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  width: 4.4em;
+  height: 4.4em;
+  border-radius: 50%;
+  border: 2px solid #f5c658;
+  box-sizing: border-box;
+}
+.personal .manhead img {
+  width: 100%;
+  vertical-align: top;
+}
+.personal p.maname {
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  z-index: 98;
+  font-size: 1.2em;
+  margin: 4px auto;
+}
+.personal a.sign {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 97;
+  width: 5em;
+  background: #f5c658;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 2em;
+}
+.btn-wallet {
+  display: block;
+  overflow: hidden;
+  margin-top: 1em;
+  border-top: 1px solid #f5c658;
+  border-bottom: 1px solid #f5c658;
+  background: #fff;
+  padding: 6px 0;
+  margin-bottom: 1em;
+}
+.btn-wallet > a {
+  display: inline-block;
+  overflow: hidden;
+  width: 49%;
+  float: left;
+  text-align: center;
+  height: 2.4em;
+  line-height: 2.4em;
+  box-sizing: border-box;
+}
+.btn-wallet > a span.circle {
+  display: inline-block;
+  line-height: 2em;
+  text-align: center;
+  background: #f5c658;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  margin-right: 4px;
+}
+.btn-wallet > a i {
+  font-size: 1.8em;
+}
+.btn-wallet a.integral {
+  border-right: 1px solid #f5c658;
+}
+.btn-order {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+}
+.btn-order .tit {
+  display: block;
+  height: 2.4em;
+  line-height: 2.4em;
+  padding: 0 8px;
+  border-bottom: 1px solid #ddd;
+}
+.btn-order li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 4px 0;
+}
+.btn-order li > a {
+  display: inline-block;
+  overflow: hidden;
+}
+.btn-order li i {
+  font-size: 1.8em;
+  color: #f5c658;
+}
