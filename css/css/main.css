@@ -1951,3 +1951,20 @@ a.btn.warning {
   font-size: 1.8em;
   color: #f5c658;
 }
+.funclist {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  margin-top: 1em;
+}
+.funclist li {
+  display: block;
+  overflow: hidden;
+  height: 2.8em;
+  line-height: 2.8em;
+  border-top: 1px solid #ddd;
+  padding: 0 8px;
+}
+.funclist li a.item > span {
+  margin-left: 8px;
+}
