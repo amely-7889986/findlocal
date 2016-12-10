@@ -346,22 +346,21 @@ a {
 }
 #bottom-nav .shopbtn a.addcar {
   width: 30%;
-  line-height: 3em;
-  color: #ffffff;
-  font-size: 1.4em !important;
+  color: #1f1f1f;
+  background: #f5c658;
+  float: right;
 }
-#bottom-nav .shopbtn a.buynow {
-  width: 30%;
-  background: #e00c0c;
-  line-height: 3em;
-  color: #ffffff;
-  font-size: 1.4em !important;
+#bottom-nav .shopbtn a.addcar p {
+  line-height: 3.4em;
 }
-#bottom-nav .shopbtn a.onebook {
-  width: 60%;
-  line-height: 3em;
-  color: #ffffff;
-  font-size: 1.4em !important;
+#bottom-nav .shopbtn .paycount {
+  display: block;
+  width: 68%;
+  text-align: right;
+  line-height: 3.8em;
+}
+#bottom-nav .shopbtn .paycount span {
+  margin-left: 4px;
 }
 #bottom-nav .commentxt {
   display: block;
@@ -1837,6 +1836,113 @@ a.btn.warning {
   border-color: #fa7669;
   color: #fa7669;
 }
+.groupjoin {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+.joinpro {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 4px 8px;
+  margin-bottom: 1em;
+}
+.joinpro .pic {
+  display: block;
+  width: 6em;
+  height: 6em;
+  overflow: hidden;
+  margin-right: 8px;
+  float: left;
+}
+.joinpro .pic img {
+  width: 100%;
+  vertical-align: top;
+}
+.joinpro .detail p.tit {
+  font-size: 1.2em;
+}
+.seal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: block;
+  overflow: hidden;
+  width: 5em;
+  height: 5em;
+  z-index: 99;
+}
+.seal > a.seal-btn {
+  display: inline-block;
+  overflow: hidden;
+  width: 3.6em;
+  height: 3.6em;
+  border: 2px solid #e60000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 1.4em !important;
+  text-align: center;
+  vertical-align: middle;
+  transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  -moz-transform: rotate(330deg);
+  -webkit-transform: rotate(330deg);
+  -o-transform: rotate(330deg);
+}
+.seal > a.seal-success {
+  border-color: #e60000;
+  color: #e60000;
+}
+.seal > a.seal-fail {
+  border-color: #aaaaaa;
+  color: #bfbfbf;
+}
+.joinman {
+  display: block;
+  overflow: hidden;
+  padding: 4px 8px;
+}
+.joinman .manlist {
+  display: table;
+  overflow: hidden;
+  margin: 0 auto;
+  width: auto;
+  vertical-align: middle;
+}
+.joinman li {
+  display: table-cell;
+  overflow: hidden;
+  position: relative;
+  width: 5em;
+  margin: 0 1%;
+  vertical-align: middle;
+  z-index: 9;
+}
+.joinman li .pic {
+  width: 4em;
+  height: 4em;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.joinman li .pic img {
+  width: 100%;
+}
+.joinman li .title {
+  display: block;
+  position: absolute;
+  top: 0;
+  font-size: 0.8em !important;
+  padding: 0 4px;
+  text-align: center;
+  border-radius: 4em;
+  z-index: 99;
+}
 .personal {
   display: block;
   overflow: hidden;
@@ -1967,4 +2073,123 @@ a.btn.warning {
 }
 .funclist li a.item > span {
   margin-left: 8px;
+}
+.addressbox {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  height: 3.6em;
+  padding: 4px 0;
+}
+.addressbox i {
+  display: inline-block;
+  line-height: 3.6em;
+  width: 10%;
+  text-align: center;
+}
+.addressbox .info {
+  display: block;
+  overflow: hidden;
+  width: 80%;
+}
+.addressbox .info > p {
+  line-height: 1.8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+.border-linear {
+  margin-bottom: 1em;
+  height: 2px;
+  background: #89d1ff;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #89d1ff 0%, #89d1ff 10%, #fa7669 10%, #fa7669 20%, #89d1ff 20%, #89d1ff 30%, #fa7669 30%, #fa7669 40%, #89d1ff 40%, #89d1ff 50%, #fa7669 50%, #fa7669 60%, #89d1ff 60%, #89d1ff 70%, #fa7669 70%, #fa7669 80%, #89d1ff 80%, #89d1ff 90%, #fa7669 90%, #fa7669 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #89d1ff 0%, #89d1ff 10%, #fa7669 10%, #fa7669 20%, #89d1ff 20%, #89d1ff 30%, #fa7669 30%, #fa7669 40%, #89d1ff 40%, #89d1ff 50%, #fa7669 50%, #fa7669 60%, #89d1ff 60%, #89d1ff 70%, #fa7669 70%, #fa7669 80%, #89d1ff 80%, #89d1ff 90%, #fa7669 90%, #fa7669 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #89d1ff 0%, #89d1ff 10%, #fa7669 10%, #fa7669 20%, #89d1ff 20%, #89d1ff 30%, #fa7669 30%, #fa7669 40%, #89d1ff 40%, #89d1ff 50%, #fa7669 50%, #fa7669 60%, #89d1ff 60%, #89d1ff 70%, #fa7669 70%, #fa7669 80%, #89d1ff 80%, #89d1ff 90%, #fa7669 90%, #fa7669 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#89d1ff', endColorstr='#fa7669', GradientType=0);
+  /* IE6-9 */
+}
+.prosec {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 1em;
+}
+.prosec a.proinfo {
+  width: 96%;
+  display: block;
+  overflow: hidden;
+  padding: 4px 2%;
+  border-bottom: 1px solid #ddd;
+}
+.prosec a.proinfo .pic {
+  display: block;
+  width: 24%;
+  height: 6em;
+  overflow: hidden;
+  float: left;
+}
+.prosec a.proinfo .pic img {
+  width: 100%;
+  vertical-align: top;
+}
+.prosec a.proinfo .detail {
+  display: block;
+  width: 74%;
+  margin-left: 2%;
+  overflow: hidden;
+  float: left;
+}
+.prosec a.proinfo .detail p.tit {
+  font-size: 1.2em;
+  font-weight: 600;
+  display: inline-block;
+}
+.prosec .pronum {
+  display: block;
+  height: 2.4em;
+  line-height: 2.4em;
+  padding: 4px 8px;
+}
+.prosec .pronum input[type="text"] {
+  width: 4em;
+  border: 1px solid #f5c658;
+  height: 1.8em;
+  margin: .2em auto;
+}
+.prosec .pronum a {
+  font-size: 1.2em;
+  margin: 0 4px;
+}
+.payway {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+}
+.payway li {
+  display: block;
+  overflow: hidden;
+  height: 3em;
+  line-height: 3em;
+  border-bottom: 1px solid #ddd;
+}
+.payway li i.icon {
+  margin-right: 8px;
+}
+.payway li input.input-check[type="checkbox"] {
+  position: absolute;
+  right: 8px;
+  width: 100%;
+  height: 3em;
+  background: url(../../images/ic-tick.png) center center no-repeat;
+  background-size: auto 50%;
+  -webkit-appearance: none;
+  background-position: -1.4em center;
+}
+.payway li input.input-check[type="checkbox"]:checked {
+  background-position: 96% center;
 }

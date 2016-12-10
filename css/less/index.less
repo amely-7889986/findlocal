@@ -1079,3 +1079,114 @@ a.btn.warning{
 	border-color: #fa7669;
 	color: #fa7669;
 }
+
+// 拼单模块
+.groupjoin{
+	display: block;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+}
+.joinpro{
+	display: block;
+	overflow: hidden;
+	.bg-bai;
+	border-bottom: 1px solid #ddd;
+	padding: 4px 8px;
+	margin-bottom: 1em;
+	.pic{
+		display: block;
+		width: 6em;
+		height: 6em;
+		overflow: hidden;
+		margin-right: 8px;
+		.l-left;
+		img{
+			width: 100%;
+			vertical-align: top;
+		}
+	}
+	.detail{
+		p.tit{
+			.font12;
+		}
+	}
+}
+.seal{
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	display: block;
+	overflow: hidden;
+	width: 5em;
+	height: 5em;
+	z-index: 99;
+	>a.seal-btn{
+		display: inline-block;
+		overflow: hidden;
+		width: 3.6em;
+		height: 3.6em;
+		border: 2px solid #e60000;
+		border-radius: 50%;
+		box-sizing: border-box;
+		border-width: 2px;
+		border-style: solid;
+		.font14;
+		.text-ac;
+		vertical-align: middle;
+		transform: rotate(330deg);
+		-ms-transform: rotate(330deg);
+		-moz-transform: rotate(330deg);
+		-webkit-transform: rotate(330deg);
+		-o-transform: rotate(330deg);
+	}
+	>a.seal-success{
+		border-color: #e60000;
+		.col-red;
+	}
+	>a.seal-fail{
+		border-color: #aaaaaa;
+		.col-hui;
+	}
+}
+.joinman{
+	display: block;
+	overflow: hidden;
+	padding: 4px 8px;
+	.manlist{
+		display: table;
+		overflow: hidden;
+		margin: 0 auto;
+		width: auto;
+		vertical-align: middle;
+	}
+	li{
+		display: table-cell;
+		overflow: hidden;
+		position: relative;
+		width: 5em;
+		margin: 0 1%;
+		vertical-align: middle;
+		z-index: 9;
+		.pic{
+			width: 4em;
+			height: 4em;
+			margin: 0 auto;
+			overflow: hidden;
+			border-radius: 50%;
+			img{
+				width: 100%;
+			}
+		}
+		.title{
+			display: block;
+			position: absolute;
+			top: 0;
+			.font8;
+			padding: 0 4px;
+			.text-ac;
+			border-radius: 4em;
+			z-index: 99;
+		}
+	}
+}
