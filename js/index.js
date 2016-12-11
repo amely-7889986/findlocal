@@ -24,6 +24,14 @@ function init(){
 }
 init();
 
+//展开参团人员参数
+$(document).ready(function(){
+  $(".showbtn").click(function(){
+    $(".showcase").slideToggle("slow");
+    $(".arrowdown").toggleClass("arrowup", 1000);
+  });
+});
+
 // 懒加载
 // var loading = false;
 //     $(window).scroll(function () {

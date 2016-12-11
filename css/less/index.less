@@ -1079,6 +1079,27 @@ a.btn.warning{
 	border-color: #fa7669;
 	color: #fa7669;
 }
+.orderstate{
+	display: block;
+	overflow: hidden;
+	.bg-hei;
+	height: 4.8em;
+	line-height: 4.8em;
+	padding: 0 24px;
+	.col-bai;
+	i{
+		font-size: 2.8em;
+	}
+}
+.orderinfo{
+	display: block;
+	overflow: hidden;
+	.bg-bai;
+	padding: 4px 8px;
+	line-height: 2em;
+	.font8;
+	margin-bottom: 1em;
+}
 
 // 拼单模块
 .groupjoin{
@@ -1153,40 +1174,113 @@ a.btn.warning{
 	display: block;
 	overflow: hidden;
 	padding: 4px 8px;
+	margin-bottom: 1em;
 	.manlist{
 		display: table;
 		overflow: hidden;
 		margin: 0 auto;
 		width: auto;
 		vertical-align: middle;
-	}
-	li{
-		display: table-cell;
-		overflow: hidden;
-		position: relative;
-		width: 5em;
-		margin: 0 1%;
-		vertical-align: middle;
-		z-index: 9;
-		.pic{
-			width: 4em;
-			height: 4em;
-			margin: 0 auto;
+		margin-top: .4em;
+		li{
+			display: table-cell;
 			overflow: hidden;
+			position: relative;
+			width: 5em;
+			margin: 0 1%;
+			vertical-align: middle;
+			z-index: 9;
+			.pic{
+				width: 4.4em;
+				height: 4.4em;
+				margin: 0 auto;
+				overflow: hidden;
+				border-radius: 50%;
+				img{
+					width: 100%;
+				}
+			}
+			.title{
+				display: block;
+				position: absolute;
+				top: 0;
+				.font8;
+				padding: 0 4px;
+				.text-ac;
+				border-radius: 4em;
+				z-index: 99;
+				border: 1px solid #fff;
+			}
+		}
+	}
+}
+.showcase{
+	display: none;
+	overflow: hidden;
+	margin-bottom: 1em;
+	li{
+		display: block;
+		.bg-bai;
+		overflow: hidden;
+		border-bottom: 1px solid #ddd;
+		padding: 4px 8px;
+		line-height: 3.4em;
+		.pic{
+			display: block;
+			overflow: hidden;
+			width: 3.4em;
+			height: 3.4em;
 			border-radius: 50%;
+			margin-right: 4px;
 			img{
 				width: 100%;
 			}
 		}
-		.title{
-			display: block;
-			position: absolute;
-			top: 0;
-			.font8;
-			padding: 0 4px;
-			.text-ac;
-			border-radius: 4em;
-			z-index: 99;
-		}
 	}
+}
+.showbtn{
+	text-align: center;
+	border-top: 1px solid #ddd;
+	height: 2.4em;
+	line-height: 2.4em;
+	color: #313131;
+	.font12;
+	margin-bottom: .4em;
+}
+.arrowdown{
+	background: url(../../images/ic-arrowdown.png) 16em center no-repeat;
+}
+.arrowup{
+	background: url(../../images/ic-arrowup.png) 16em center no-repeat;
+}
+.grouptab{
+	position: fixed;
+    display: block;
+    width: 100%;
+    .bg-hei;
+    .col-huang;
+    overflow: hidden;
+    z-index: 999;
+    li{
+    	display: block;
+    	width: 25%;
+    	.l-left;
+    	.text-ac;
+    	.font8;
+    	a{
+    		display: inline-block;
+    		padding: 8px 0;
+    		box-sizing: border-box;
+    	}
+    	a:hover,a:active,a.active{
+    		border-bottom: 2px solid #fed572;
+    		color: #fed572;
+    	}
+    }
+}
+
+// 优惠券模块
+.couponlist{
+	display: block;
+	overflow: hidden;
 }

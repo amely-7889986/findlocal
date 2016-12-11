@@ -137,6 +137,9 @@ a {
 .bg-bai {
   background: #fff;
 }
+.bg-red {
+  background: #e60000;
+}
 .bg-hei {
   background: #1f1f1f;
 }
@@ -209,6 +212,9 @@ a {
 }
 .col-red {
   color: #e60000;
+}
+.col-cheng {
+  color: #f4a101;
 }
 .font8 {
   font-size: 0.8em !important;
@@ -677,6 +683,9 @@ a {
 }
 .mgb10 {
   margin-bottom: 10px !important;
+}
+.mgb1 {
+  margin-bottom: 1em !important;
 }
 .mgb32 {
   margin-bottom: 3.2em;
@@ -1836,6 +1845,27 @@ a.btn.warning {
   border-color: #fa7669;
   color: #fa7669;
 }
+.orderstate {
+  display: block;
+  overflow: hidden;
+  background: #1f1f1f;
+  height: 4.8em;
+  line-height: 4.8em;
+  padding: 0 24px;
+  color: #ffffff;
+}
+.orderstate i {
+  font-size: 2.8em;
+}
+.orderinfo {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  padding: 4px 8px;
+  line-height: 2em;
+  font-size: 0.8em !important;
+  margin-bottom: 1em;
+}
 .groupjoin {
   display: block;
   overflow: hidden;
@@ -1906,6 +1936,7 @@ a.btn.warning {
   display: block;
   overflow: hidden;
   padding: 4px 8px;
+  margin-bottom: 1em;
 }
 .joinman .manlist {
   display: table;
@@ -1913,8 +1944,9 @@ a.btn.warning {
   margin: 0 auto;
   width: auto;
   vertical-align: middle;
+  margin-top: .4em;
 }
-.joinman li {
+.joinman .manlist li {
   display: table-cell;
   overflow: hidden;
   position: relative;
@@ -1923,17 +1955,17 @@ a.btn.warning {
   vertical-align: middle;
   z-index: 9;
 }
-.joinman li .pic {
-  width: 4em;
-  height: 4em;
+.joinman .manlist li .pic {
+  width: 4.4em;
+  height: 4.4em;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 50%;
 }
-.joinman li .pic img {
+.joinman .manlist li .pic img {
   width: 100%;
 }
-.joinman li .title {
+.joinman .manlist li .title {
   display: block;
   position: absolute;
   top: 0;
@@ -1942,6 +1974,77 @@ a.btn.warning {
   text-align: center;
   border-radius: 4em;
   z-index: 99;
+  border: 1px solid #fff;
+}
+.showcase {
+  display: none;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+.showcase li {
+  display: block;
+  background: #fff;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 4px 8px;
+  line-height: 3.4em;
+}
+.showcase li .pic {
+  display: block;
+  overflow: hidden;
+  width: 3.4em;
+  height: 3.4em;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.showcase li .pic img {
+  width: 100%;
+}
+.showbtn {
+  text-align: center;
+  border-top: 1px solid #ddd;
+  height: 2.4em;
+  line-height: 2.4em;
+  color: #313131;
+  font-size: 1.2em;
+  margin-bottom: .4em;
+}
+.arrowdown {
+  background: url(../../images/ic-arrowdown.png) 16em center no-repeat;
+}
+.arrowup {
+  background: url(../../images/ic-arrowup.png) 16em center no-repeat;
+}
+.grouptab {
+  position: fixed;
+  display: block;
+  width: 100%;
+  background: #1f1f1f;
+  color: #f5c658;
+  overflow: hidden;
+  z-index: 999;
+}
+.grouptab li {
+  display: block;
+  width: 25%;
+  float: left;
+  text-align: center;
+  font-size: 0.8em !important;
+}
+.grouptab li a {
+  display: inline-block;
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+.grouptab li a:hover,
+.grouptab li a:active,
+.grouptab li a.active {
+  border-bottom: 2px solid #fed572;
+  color: #fed572;
+}
+.couponlist {
+  display: block;
+  overflow: hidden;
 }
 .personal {
   display: block;
@@ -2148,6 +2251,26 @@ a.btn.warning {
   font-size: 1.2em;
   font-weight: 600;
   display: inline-block;
+}
+.prosec .checkbtn {
+  display: block;
+  overflow: hidden;
+  padding: 4px 8px;
+  border-bottom: 1px solid #ddd;
+}
+.prosec .checkbtn a.group {
+  display: inline-block;
+  overflow: hidden;
+  border: 1px solid #aaa;
+  color: #1f1f1f;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.prosec .paymoney {
+  display: block;
+  overflow: hidden;
+  padding: 4px 8px;
+  text-align: right;
 }
 .prosec .pronum {
   display: block;
