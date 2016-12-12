@@ -234,6 +234,9 @@ a {
 .font20 {
   font-size: 2.2em;
 }
+.font24 {
+  font-size: 2.4em;
+}
 .text-ac {
   text-align: center;
 }
@@ -367,6 +370,13 @@ a {
 }
 #bottom-nav .shopbtn .paycount span {
   margin-left: 4px;
+}
+#bottom-nav .shopbtn .w34 {
+  width: 34%;
+  padding: 0 2%;
+  line-height: 3.8em;
+  border-left: 1px solid #ddd;
+  box-sizing: border-box;
 }
 #bottom-nav .commentxt {
   display: block;
@@ -2046,6 +2056,182 @@ a.btn.warning {
   display: block;
   overflow: hidden;
 }
+.couponbox {
+  display: block;
+  overflow: hidden;
+  height: 7em;
+  padding: .5em 8px;
+  border-radius: 12px;
+}
+.couponbox .box-left {
+  display: block;
+  width: 76%;
+  height: 7em;
+  float: left;
+  background: url(../../images/coupon-lbg.png) left center no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+}
+.couponbox .couponsec {
+  margin: .8em 8px;
+  display: block;
+  overflow: hidden;
+  border: 1px dashed #f4a101;
+  box-sizing: border-box;
+  padding: .4em 0;
+}
+.couponbox .couponsec .count {
+  display: block;
+  overflow: hidden;
+  width: 24%;
+  float: left;
+  border-right: 1px solid #f4a101;
+  padding-right: 4px;
+  text-align: center;
+}
+.couponbox .couponsec .detail {
+  display: block;
+  overflow: hidden;
+  width: 70%;
+  float: left;
+  padding-left: 4px;
+}
+.couponbox .couponsec .detail > p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.couponbox .box-right {
+  display: block;
+  width: 24%;
+  height: 4em;
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4em !important;
+  padding-top: 1em;
+  vertical-align: middle;
+}
+.couponbox .immediate {
+  background: url(../../images/coupon-rhbg.png) left center no-repeat;
+  background-size: 100% 100%;
+}
+.couponbox .integral {
+  background: url(../../images/coupon-rcbg.png) left center no-repeat;
+  background-size: 100% 100%;
+}
+.signpop {
+  display: block;
+  overflow: hidden;
+  padding: 0 12px;
+}
+.signpop .pic {
+  width: 9em;
+  margin: 8px auto;
+}
+.signpop .pic img {
+  width: 100%;
+}
+.signpop > p {
+  margin: 4px 0;
+}
+.signpop a.btn-sign {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 2em;
+  line-height: 2em;
+  width: 6em;
+  border-radius: 1em;
+  background: #fff;
+  text-align: center;
+}
+.couponinfo {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  margin: 8px 24px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 9;
+}
+.couponinfo .title {
+  height: 4.8em;
+  line-height: 4.8em;
+  border-bottom: 1px dashed #fed572;
+  vertical-align: middle;
+}
+.couponinfo .title span {
+  margin: 0 2px;
+}
+.couponinfo .huangpoint {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  top: 4.2em;
+  height: 1.2em;
+  width: 100%;
+  z-index: 99;
+}
+.couponinfo .huangpoint span {
+  display: block;
+  width: .6em;
+  height: 1.2em;
+  background: #fed572;
+}
+.couponinfo .huangpoint span.left {
+  float: left;
+  left: -0.4em;
+  border-top-right-radius: .6em;
+  border-bottom-right-radius: .6em;
+}
+.couponinfo .huangpoint span.right {
+  float: right;
+  right: .4em;
+  border-top-left-radius: .6em;
+  border-bottom-left-radius: .6em;
+}
+.couponinfo .infobox {
+  display: block;
+  overflow: hidden;
+  padding: 8px 0;
+}
+.couponinfo .discount {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px dashed #ddd;
+  padding: 4px 0;
+  margin: 0 18px;
+}
+.couponinfo .explain {
+  display: block;
+  overflow: hidden;
+  padding: 8px 18px;
+}
+.couponinfo .explain .w30 {
+  width: 30%;
+}
+.couponinfo .explain .w70 {
+  width: 70%;
+}
+.couponinfo .explain li {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.couponinfo a.btn-receive {
+  display: block;
+  margin: 12px auto;
+  overflow: hidden;
+  width: 6em;
+  height: 2em;
+  line-height: 2em;
+  border-radius: 1em;
+  font-size: 1.4em !important;
+  color: #ffffff;
+  text-align: center;
+  background: #fa7669;
+}
 .personal {
   display: block;
   overflow: hidden;
@@ -2315,4 +2501,92 @@ a.btn.warning {
 }
 .payway li input.input-check[type="checkbox"]:checked {
   background-position: 96% center;
+}
+.loginbox {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../../update/login-bg.png) center center no-repeat;
+  background-size: 100% 100%;
+}
+.registerbox {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../../update/register-bg.png) center center no-repeat;
+  background-size: 100% 100%;
+}
+.login-logo {
+  display: block;
+  overflow: hidden;
+  width: 80%;
+  height: auto;
+  margin: 8em auto;
+}
+.login-logo img {
+  width: 100%;
+}
+.login-form {
+  display: block;
+  overflow: hidden;
+  width: 84%;
+  padding: .4em 8%;
+  position: absolute;
+  bottom: 8em;
+}
+.login-form .formbox {
+  display: block;
+  overflow: hidden;
+  color: #ffffff;
+  height: 2.4em;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 1em;
+  padding-bottom: .4em;
+}
+.login-form .formbox input {
+  border: none;
+  background: none;
+  color: #ffffff;
+  height: 2.8em;
+  margin-left: 8px;
+}
+.login-form .formbox .w86 {
+  width: 86%;
+}
+.login-form .formbox .w58 {
+  width: 58%;
+}
+.login-form a.code {
+  display: inline-block;
+  overflow: hidden;
+  background: #fed572;
+  color: #1f1f1f;
+  border-radius: 4px;
+  height: 2em;
+  line-height: 2em;
+  width: 36%;
+  text-align: center;
+  font-size: 1.2em;
+  float: left;
+}
+.login-form .formlink {
+  display: block;
+  overflow: hidden;
+  height: 2em;
+  line-height: 2em;
+}
+.login-form a.btn-login {
+  display: block;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #f5c658;
+  font-size: 1.4em !important;
+  text-align: center;
+  color: #1f1f1f;
+  padding: 4px 0;
+  margin: 12px 0;
 }

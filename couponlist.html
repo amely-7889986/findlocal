@@ -41,33 +41,71 @@
             <div class="couponlist">
                 <ul>
                     <li class="couponbox">
-                        <div class="box-left">
-                            <div class="count l-left">
-                                <p class="font18 col-red">8元</p>
-                                <p class="font12 col-red">优惠券</p>
+                        <a href="couponinfo.html" class="box-left">
+                            <div class="couponsec">
+                                <div class="count l-left">
+                                    <p class="font18 col-red">8元</p>
+                                    <p class="font12 col-red">优惠券</p>
+                                </div>
+                                <div class="detail">
+                                    <p class="font12 col-cheng">全场满100送现金代金券</p>
+                                    <p class="font12 col-cheng">有效期：11.01-12.01</p>
+                                </div>
                             </div>
-                            <div class="detail">
-                                <p class="font12 col-cheng">全场满100送现金代金券</p>
-                                <p class="font12 col-huang">有效期：11.01-12.01</p>
-                            </div>
-                        </div>
-                        <div class="box-right">
-                            <a href="login.html" class="exchange">立即兑换</a>
+                        </a>
+                        <div class="box-right immediate">
+                            <a href="login.html" class="exchange">立即<br>兑换</a>
                         </div>
                     </li>
                     <li class="couponbox">
-                        <div class="box-left">
-                            <div class="count l-left">
-                                <p class="font18 col-cheng">8元</p>
-                                <p class="font12 col-cheng">优惠券</p>
+                        <a href="couponinfo.html" class="box-left">
+                            <div class="couponsec">
+                                <div class="count l-left">
+                                    <p class="font18 col-cheng">8元</p>
+                                    <p class="font12 col-cheng">优惠券</p>
+                                </div>
+                                <div class="detail">
+                                    <p class="font12 col-red">全场满100送现金代金券</p>
+                                    <p class="font12 col-red">有效期：11.01-12.01</p>
+                                </div>
                             </div>
-                            <div class="detail">
-                                <p class="font12 col-red">全场满100送现金代金券</p>
-                                <p class="font12 col-red">有效期：11.01-12.01</p>
-                            </div>
+                        </a>
+                        <div class="box-right integral">
+                            <a href="login.html" class="exchange">积分<br>兑换</a>
                         </div>
-                        <div class="box-right">
-                            <a href="login.html" class="exchange">积分兑换</a>
+                    </li>
+                    <li class="couponbox">
+                        <a href="couponinfo.html" class="box-left">
+                            <div class="couponsec">
+                                <div class="count l-left">
+                                    <p class="font18 col-red">8元</p>
+                                    <p class="font12 col-red">优惠券</p>
+                                </div>
+                                <div class="detail">
+                                    <p class="font12 col-cheng">全场满100送现金代金券</p>
+                                    <p class="font12 col-cheng">有效期：11.01-12.01</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="box-right immediate">
+                            <a href="login.html" class="exchange">立即<br>兑换</a>
+                        </div>
+                    </li>
+                    <li class="couponbox">
+                        <a href="couponinfo.html" class="box-left">
+                            <div class="couponsec">
+                                <div class="count l-left">
+                                    <p class="font18 col-cheng">8元</p>
+                                    <p class="font12 col-cheng">优惠券</p>
+                                </div>
+                                <div class="detail">
+                                    <p class="font12 col-red">全场满100送现金代金券</p>
+                                    <p class="font12 col-red">有效期：11.01-12.01</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="box-right integral">
+                            <a href="javascript:void(0)" id="sign" class="exchange">积分<br>兑换</a>
                         </div>
                     </li>
                 </ul>
@@ -83,6 +121,7 @@
                     <p>首页</p>
                 </li>
                 <li>
+                    <a class="a-box" href="prolist.html"></a>
                     <i class="icon iconfont">&#xe68d;</i>
                     <p>商城</p>
                 </li>
@@ -92,7 +131,7 @@
                     <p>VR地标</p>
                 </li>
                 <li>
-                    <a class="a-box" href=""></a>
+                    <a class="a-box" href="usercenter.html"></a>
                     <i class="icon iconfont">&#xe685;</i>
                     <p>我的</p>
                 </li>
@@ -104,4 +143,14 @@
 <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="js/index.js" type="text/javascript"></script>
 <script src="js/swiper-3.3.1.jquery.min.js" type="text/javascript"></script>
+<script src="js/layer.js" type="text/javascript"></script>
+<script>
+    $('#sign').on('click', function(){
+        layer.open({
+        type: 1,
+        content: '<div class="signpop"><a href=""><i class="icon iconfont col-bai font18 l-right">&#xe643;</i></a><div class="pic"><img src="images/coupon.png" alt="" /></div><p class="font14 col-hei text-ac">领取优惠券？</p><p class="font10 col-hei text-ac">请先登录账号</p><a href="login.html" class="btn-sign box-shadow">注册/登录</a></div>',
+        style: 'width: 80%; height: auto; padding:4px 0 10px 0; border:none; background:#f5c658; border-radius: 4px;',
+      });
+    });
+</script>
 </html>
