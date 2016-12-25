@@ -305,10 +305,10 @@ a {
   color: #fff;
 }
 #bottom-nav li .icon {
-  font-size: 1.8em;
+  font-size: 2.4em;
 }
 #bottom-nav li p {
-  font-size: .4em;
+  font-size: 1.2em;
 }
 #bottom-nav li.active {
   color: #fed572;
@@ -443,6 +443,7 @@ a {
 }
 #bottom-nav .commentxt > a i {
   font-size: 1.4em !important;
+  line-height: 2em;
 }
 .bottom-tab {
   display: block;
@@ -1250,6 +1251,7 @@ a {
 }
 .relatedbox-lg a.collect i {
   font-size: 1.4em !important;
+  line-height: 2em;
 }
 .relatedbox-lg .titbox {
   display: block;
@@ -1323,6 +1325,7 @@ a {
 }
 .relatedbox-sm .probox a.collect i {
   font-size: 1.4em !important;
+  line-height: 2em;
 }
 .relatedbox-sm .titbox {
   display: block;
@@ -1465,6 +1468,7 @@ a {
 }
 .prolist .probox a.collect i {
   font-size: 1.4em !important;
+  line-height: 2em;
 }
 .prolist .titbox {
   display: block;
@@ -1602,8 +1606,8 @@ a {
   text-align: center;
   color: #ffffff;
   position: relative;
-  top: .6em;
-  right: .4em;
+  top: .8em;
+  right: .5em;
 }
 .shopbox .commentbox {
   display: block;
@@ -1798,7 +1802,6 @@ a {
 .orderbox .proinfo .pic {
   display: block;
   width: 24%;
-  height: 6em;
   overflow: hidden;
   float: left;
 }
@@ -2355,8 +2358,8 @@ a.btn.warning {
 .funclist li {
   display: block;
   overflow: hidden;
-  height: 2.8em;
-  line-height: 2.8em;
+  height: 3.4em;
+  line-height: 3.4em;
   border-top: 1px solid #ddd;
   padding: 0 8px;
 }
@@ -2418,7 +2421,6 @@ a.btn.warning {
 .prosec a.proinfo .pic {
   display: block;
   width: 24%;
-  height: 6em;
   overflow: hidden;
   float: left;
 }
