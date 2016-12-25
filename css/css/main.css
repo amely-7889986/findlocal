@@ -302,10 +302,10 @@ a {
   color: #fff;
 }
 #bottom-nav li .icon {
-  font-size: 1.8em;
+  font-size: 2.4em;
 }
 #bottom-nav li p {
-  font-size: .4em;
+  font-size: 1.2em;
 }
 #bottom-nav li.active {
   color: #fed572;
@@ -732,7 +732,6 @@ a {
 .menu li {
   width: 25%;
   float: left;
-  font-size: 12px;
   text-decoration: none;
   color: #666;
   text-align: center;
@@ -1455,6 +1454,7 @@ a {
 }
 .prolist .probox a.collect i {
   font-size: 1.4em !important;
+  line-height: 2em;
 }
 .prolist .titbox {
   display: block;
